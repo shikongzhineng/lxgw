@@ -62,12 +62,13 @@
   /* height: 0px; */
   font-size: 14px;
   background-color: #ffffff;
-  visibility: hidden;
+  display: none;
   overflow: hidden;
   transition: all .2s linear;
 }
 .header .nav-item:hover .drop-menu {
-  visibility: visible;
+  display: block;
+  /* visibility: visible; */
   /* height: 200px; */
 }
 .header .nav-item .drop-menu .title a{
