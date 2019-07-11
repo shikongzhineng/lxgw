@@ -1,0 +1,23 @@
+.main>.head {
+  background: url('/images/news/top_img2.jpg') 52%  no-repeat;
+}
+.list-group-item {
+  padding: 16px;
+  border: none;
+}
+
+.media-left {
+  width: 200px;
+}
+.media img{
+  width: 100%;
+}
+.media-body {
+  font-size: 14px;
+}
+.media .category {
+  color: #ffffff;
+  padding: 0.25rem;
+  margin-right: 1rem;
+  background-color: #aaaaaa;
+}

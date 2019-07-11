@@ -1,0 +1,34 @@
+.main .content.product .article-title {
+  color: red;
+}
+.main>.head {
+  background: url('/images/product/top_img4.jpg') 52%  no-repeat;
+}
+.main article {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.aside>.head {
+  background:rgba(100,100,100,0.5);
+}
+.card {
+  padding: 1rem;
+}
+.card-title {
+  text-align: center;
+}
+.card-text {
+  font-size: 14px;
+}
+.content.product .card img {
+  width: 100%;
+}
+.backbox-p {
+  cursor: pointer;
+}
+.backbox {
+  top:100%;
+  left:0;
+  padding: 0;
+}

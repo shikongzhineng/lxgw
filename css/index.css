@@ -1,0 +1,145 @@
+/* 轮播图 */
+.carousel-item {
+  opacity: 0;
+  transition: all .5s linear 0s;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  background-color: #aaaaaa;
+  opacity: 0.5;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background-color: #cccccc;
+  opacity: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 45%;
+  background-color: #3a3a3a;
+  border-radius: 50%;
+}
+.carousel img {
+  width: 100%;
+}
+
+/* ohter */
+.card {
+  border: none;
+}
+.card-text {
+  font-size: 14px;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.card-img-top {
+  text-align: center;
+}
+
+.main ul {
+  list-style: none;
+}
+.main ul,
+.main ul li{
+  padding: 0;
+}
+
+.backbox a,
+.backbox a:hover{
+  color:#fff;
+}
+/* 热门资源 */
+.rmzy {
+  margin-top: 50px;
+}
+.rmzy>.title ,
+.business>.title,
+.business .card,
+.head .title,
+.rmzy>.content {
+  text-align: center;
+}
+.rmzy>.title ,
+.business>.title,
+.xwzx .head,
+.lxst .head{
+  margin-bottom: 30px;
+}
+.rmzy .row .col {
+  border-right: 1px solid #cccccc;
+}
+.rmzy .row .col:last-child {
+  border: none;
+}
+.rmzy .col>.content {
+  margin: 0 auto;
+  width: 300px;
+}
+.rmzy .card {
+  width: 300px;
+}
+.rmzy .card img {
+  height: 90px;
+}
+.business {
+  margin-top: 50px;
+}
+.business ul li,
+.business ul,
+.business .card-body ,
+.xwzx .card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+.business .card img{
+  height: 70px;
+}
+.business .card-title ,
+.xwzx .content {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  
+}
+.xwzx .content {
+  width: 95%;
+}
+.xwzx .card-img-top {
+  height: 160px;
+}
+.xwzx .card-title,
+.lxst .card-title{
+  font-weight: bold;
+}
+.xwzx .backbox-p {
+  cursor: pointer;
+}
+.xwzx .backbox-p>.card .card-title {
+  height: 48px;  
+  overflow: hidden;
+}
+.xwzx .backbox {
+  padding: 18px;
+}
+.xwzx .card img {
+ height: 100%;
+}
+.lxst .video{
+  height: 470px;
+  line-height: 470px;
+  background-color: #000000;
+}

@@ -1,0 +1,17 @@
+.footer {
+  margin-top: 50px;
+  font-size: 14px;
+}
+.footer .container {
+  margin: 0 auto;
+}
+.footer .container>.col {
+  display: flex;
+  justify-content: center;
+}
+.footer .content {
+  width: 120px;
+}
+.footer .content img{
+  width: 100%;
+}

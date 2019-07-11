@@ -1,0 +1,81 @@
+body {
+  font-size: 16px;
+}
+
+a {
+  color: #333333;
+}
+
+a:hover {
+  color: #f95454;
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  min-width: 1200px;
+}
+
+.row {
+  margin: 0;
+}
+.card-text {
+  text-align: justify;
+}
+
+/* 背景盒子 */
+
+.backbox-p {
+  position: relative;
+  overflow: hidden;
+}
+
+.backbox {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  visibility: hidden;
+  text-align: justify;
+  color: #fff;
+  background-color: #f95454;
+  transition: all .3s linear;
+}
+
+.backbox-p:hover .backbox, .backbox.active {
+  visibility: visible;
+  top: 0;
+  left: 0;
+}
+.backbox a, .backbox a:hover {
+  color: #fff;
+}
+
+.text-gray {
+  color: #aaaaaa;
+}
+.bg-gray {
+  background-color: #aaaaaa;
+}
+
+/* 面包屑导航 */
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding: 0 5px;
+  color: #666666;
+  content: ">";
+}
+/* 分页 */
+.page-item .page-link {
+  color:#333;
+}
+.page-item .page-link:hover {
+  color: #f95454;
+}
+.page-item.active .page-link {
+  color: #fff;
+  background-color: #f95454;
+  border-color:#f95454;
+}

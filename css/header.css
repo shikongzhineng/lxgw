@@ -1,0 +1,111 @@
+.header {
+  border-top: 2px solid red;
+  border-bottom: 1px solid #cccccc;
+  color: #666666;
+}
+.header .container ,.nav{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.header .nav-header {
+  height: 100%;
+}
+.header .nav,.nav-item {
+  display: flex;
+  align-items: center;
+  position: static!important;
+}
+.header .nav .nav-item .nav-link{
+  margin: 10px 15px;
+}
+.header .nav-item:last-child {
+  position: relative!important;
+}
+.header .nav-item .searchbox {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 1px solid #999999;
+  border-radius: 20px;
+}
+.header .nav-item input {
+  border-color: transparent;
+  outline: 0;
+}
+.header .nav-item .submit {
+  width: 30px;
+  height: 100%;
+  cursor: pointer;
+  background: url('/images/true.png') left center no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header .nav .nav-link {
+  display: block;
+  padding: 0;
+  font-size: 16px;
+  height: 60px;
+  line-height: 60px;
+}
+.header .nav-item .drop-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 1px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 1200px;
+  z-index: 9999;
+  /* height: 0px; */
+  font-size: 14px;
+  background-color: #ffffff;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all .2s linear;
+}
+.header .nav-item:hover .drop-menu {
+  visibility: visible;
+  /* height: 200px; */
+}
+.header .nav-item .drop-menu .title a{
+  color: red;
+}
+.header .nav-item .drop-menu .submenu{
+  font-size: 13px;
+  border-right: 1px solid #dddddd;
+}
+.header .nav-item .drop-menu .submenu:last-child {
+  border: none;
+}
+.header .nav-item .drop-menu .submenu p {
+  margin-bottom: 10px;
+}
+.header .nav-item .drop-menu .submenu ul {
+  list-style: disc;
+}
+.header .nav-item .drop-menu .content{
+  width:100%;
+  /* margin: 0 auto; */
+}
+.header .nav-item:nth-child(5) .drop-menu .submenu:first-child ul,
+.header .nav-item:nth-child(6) .drop-menu .submenu:last-child ul {
+  list-style-type: none;
+  font-size: 14px;
+  text-align: center;
+}
+.header .nav-item:nth-child(5) .drop-menu .submenu:first-child ul li ,
+.header .nav-item:nth-child(6) .drop-menu .submenu:last-child ul li {
+  margin: 4px;
+  width: 120px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #aaaaaa;
+  border-radius: 3px;
+}
+.header .nav-item:nth-child(5) .drop-menu .submenu:first-child ul li:hover {
+  background-color: #777777;
+  color: #cccccc;
+}
