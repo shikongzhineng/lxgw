@@ -5,9 +5,6 @@
   font-size: 14px;
 }
 
-.main .content.product .article-title {
-  color: red;
-}
 .main>.head {
   background: url('/images/product/top_img4.jpg') 52%  no-repeat;
 }
@@ -32,4 +29,31 @@
   top:100%;
   left:0;
   padding: 0;
+}
+.lsdoc>.title{
+  padding: 1rem;
+  padding-bottom: 0.7rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #cccccc;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+.lsdoc .media {
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid transparent;
+  font-size: 14px;
+  color:#333333;
+  transition: all .5s linear;
+}
+.lsdoc .media:hover {
+  border-color: #f95454;
+  color: #db5033;
+}
+.product .xzzx>.title,
+.system .kfb>.title {
+  padding: 0.8rem;
+  font-size: 24px;
+  color: #cc0033;
 }

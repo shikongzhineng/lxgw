@@ -1,0 +1,58 @@
+.main>.head {
+  background: url('/images/about/top_img1.jpg') 52%  no-repeat;
+}
+.aside>.head {
+  background-color: rgba(0,0,0,0.3);
+}
+article section {
+  margin: 2rem;
+  margin-left: 3rem;
+}
+article section .title {
+  font-size: 22px;
+  font-weight: bold;
+  color:#ff0000;
+  margin-bottom: 1rem;
+}
+article section .row>.col {
+  padding: 0;
+}
+article section .row>.col:first-child {
+  width: 100px;
+  flex:0 0 auto;
+  border-right: 1px solid #cccccc;
+}
+article section .row .time {
+  position: relative;
+  justify-content: flex-end;
+  text-align: right;
+  padding-right: 2rem;
+  color: #666666;
+  font:14px sans-serif;
+}
+article section .row .text,
+article section .row .time {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+article section .row .text {
+  padding-left: 2rem;
+}
+article section .row .time .pointer {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  border: 5px solid #e60118;
+  border-radius: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+article section.sec2 .row .time .pointer {
+  border-color: #00ff00;
+}
+article section.sec3 .row .time .pointer {
+  border-color: #fd6900;
+}

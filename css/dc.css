@@ -1,0 +1,17 @@
+.dc table {
+  width: 95%;
+  font-size: 14px;
+}
+.dc table th {
+  color: #ffffff;
+  background-color: #686868;
+}
+.dc table td ,
+.dc table th{
+  padding: 0.4rem;
+  text-align: center;
+  vertical-align: middle;
+}
+.dc table a{
+  color: #0000ff;
+}

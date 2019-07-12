@@ -27,23 +27,3 @@
 .cpu .card:hover .link {
   background-color: #f95454;
 }
-
-.cpu .lsdoc>.title{
-  padding: 1rem;
-  padding-bottom: 0.7rem;
-  border-bottom: 1px solid #cccccc;
-  font-size: 18px;
-  font-weight: bold;
-  color: red;
-}
-.cpu .lsdoc .media {
-  padding: 24px;
-  border: 2px solid transparent;
-  font-size: 14px;
-  color:#333333;
-  transition: all .5s linear;
-}
-.cpu .lsdoc .media:hover {
-  border-color: #f95454;
-  color: #db5033;
-}

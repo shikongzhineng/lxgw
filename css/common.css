@@ -52,6 +52,11 @@ a:hover {
 .backbox a, .backbox a:hover {
   color: #fff;
 }
+.main .container .content .article-title {
+  font-size: 2rem;
+  color: #e30210;
+}
+
 
 .text-gray {
   color: #aaaaaa;
