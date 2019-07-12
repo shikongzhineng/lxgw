@@ -57,13 +57,14 @@
 .aside .tabs .tab {
   padding: 15px;
   cursor: pointer;
-  margin-bottom: 5px;
+  border-top: 1px solid #dedede;
+  background-color: #eeeeee;
   transition: all .2s linear;
 }
 
 .aside .tabs .tab:hover, 
 .aside .tabs .tab.active {
-  background-color: red;
+  background-color: #e60118;
   color: #ffffff;
 }
 
