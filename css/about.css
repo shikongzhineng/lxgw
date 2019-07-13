@@ -1,9 +1,6 @@
 .main>.head {
   background: url('/images/about/top_img1.jpg') 52%  no-repeat;
 }
-.aside>.head {
-  background-color: rgba(0,0,0,0.3);
-}
 .history article section {
   margin: 2rem;
   margin-left: 3rem;

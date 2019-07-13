@@ -13,9 +13,6 @@
   border-bottom: 1px solid #cccccc;
 }
 
-.aside>.head {
-  background:rgba(100,100,100,0.5);
-}
 .content.product .card {
   border: none;
   padding: 1rem;

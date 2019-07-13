@@ -45,10 +45,9 @@
   height: 260px;
   width: 100%;
   margin-top: -260px;
-  background-color: #aaaaaa;
+  background-color:rgba(0,0,0,0.3);
   color: #ffffff;
 }
-
 .aside>.head .title {
   width: 100%;
   padding: 15px;
