@@ -1,5 +1,12 @@
-body {
+html {
   font-size: 16px;
+}
+body {
+  font-family:arial, sans-serif;
+}
+ul,li {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -53,9 +60,14 @@ a:hover {
   color: #fff;
 }
 
-.main .container .content .article-title {
+.article-title {
   font-size: 28px;
   color: #e30210;
+}
+.article>.content {
+  font-size: 15px;
+  background-color: #F7F6F6;
+  box-shadow: 0 1px 3px #cccccc;
 }
 
 
@@ -64,6 +76,9 @@ a:hover {
 }
 .bg-gray {
   background-color: #aaaaaa;
+}
+.h-80 {
+  height: 80%;
 }
 
 /* 面包屑导航 */
@@ -74,6 +89,9 @@ a:hover {
   content: ">";
 }
 /* 分页 */
+.pagination {
+  justify-content: center;
+}
 .page-item .page-link {
   color:#333;
 }

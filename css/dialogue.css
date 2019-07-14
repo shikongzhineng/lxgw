@@ -1,3 +1,53 @@
 .main>.head {
   background: url('/images/dialogue/index.png') 52%  no-repeat;
 }
+.hr .campus article {
+  background-color: #f6f6f6;
+}
+.hr .campus .tabs {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.hr .campus .tabs .tab {
+  margin-right: 1rem;
+  padding: 0.5rem 1.3rem;
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+.hr .campus .tabs .tab.active,
+.hr .campus .tabs .tab:hover {
+  color: #ffffff;
+  background-color: #e60118;
+}
+.hr .campus .list-group-item {
+  list-style: disc;
+  border-left: 0;
+  border-right: 0;
+  transition: all .2s linear;
+}
+.hr .campus .list-group-item:hover {
+  background-color: #F7F6F6;
+}
+.info .article-title{
+  color: #000000;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dddddd;
+}
+.flink .yqlj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.flink .link {
+  flex: 0 0 auto;
+  background-color: #e60118;
+  border-radius: 5px;
+}
+.flink .link a,
+.flink .link a:hover {
+  display: block;
+  padding: 1.2rem 3.5rem;
+  color: #ffffff;
+}

@@ -1,0 +1,21 @@
+.main>.head {
+  height: 400px;
+  background: url('/images/business/tongyong_top_pic.jpg') 52%  no-repeat;
+}
+.main>.head .article {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+  width: 590px;
+  height: 100%;
+  color: #ffffff;
+}
+.main>.head .article .title {
+  font-size: 36px;
+  margin-bottom: 2rem;
+}
+.main>.head .article .text {
+  line-height: 36px;
+  text-align: justify;
+  font-size: 18px;
+}
