@@ -11,9 +11,13 @@
 }
 .media img{
   width: 100%;
+  max-height: 147px;
 }
 .media-body {
   font-size: 14px;
+}
+.media-body .media-heading {
+  font-weight: bold;
 }
 .media .category {
   color: #ffffff;

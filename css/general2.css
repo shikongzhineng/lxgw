@@ -1,7 +1,8 @@
 .main>.head {
   height: 400px;
-  background: url('/images/business/tongyong_top_pic.jpg') 52%  no-repeat;
+  background: url('/images/business/tongyong_top_pic.jpg') 52% no-repeat;
 }
+
 .main>.head .article {
   display: flex;
   align-items: center;
@@ -10,12 +11,92 @@
   height: 100%;
   color: #ffffff;
 }
+
 .main>.head .article .title {
   font-size: 36px;
   margin-bottom: 2rem;
 }
+
 .main>.head .article .text {
   line-height: 36px;
   text-align: justify;
   font-size: 18px;
+}
+
+.content.general2 {
+  display: flex;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.nav-tabs {
+  display: block;
+  flex: 0 0 170px;
+}
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+.nav-tabs .nav-item .nav-link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #eeeeee;
+  border-bottom: 1px solid #cccccc;
+}
+.nav-tabs .nav-item .nav-link:hover,
+.nav-tabs .nav-item .nav-link.active {
+  color: #f95454;
+  background-color: #ffffff;
+}
+.nav-tabs .nav-item .nav-link.active {
+  border-left: 3px solid #e30210;
+}
+.tab-content {
+  flex: 1 1 auto;
+  margin-left: 1.5rem;
+}
+.tab-content .tab-pane a {
+  display: block;
+  height: 100%;
+}
+.tab-content .tab-pane .sec {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #cccccc;
+}
+.tab-content .tab-pane .title {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #cccccc;
+}
+.tab-content .tab-pane .subtitle {
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+.tab-content .tab-pane .card {
+  height: 100%;
+  padding: 1rem 0.1rem;
+  border-radius: 0;
+  border-color: #cccccc;
+  height: 100%;
+  text-align: center;
+  transition: all .2s linear;
+}
+.tab-content .tab-pane .card:hover{
+  color: #e30210;
+  border-color: #e30210;
+}
+.tab-content .tab-pane .card .card-top-img {
+  line-height: 160px;
+  height: 180px;
+}
+.tab-content .tab-pane .card img {
+  max-width: 90%;
+}
+.tab-content .tab-pane .card .card-title {
+  font-size: 15px;
+  margin: 0;
+  margin-top:1rem;
 }
