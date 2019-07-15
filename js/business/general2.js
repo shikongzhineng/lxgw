@@ -298,15 +298,14 @@ $(function () {
 
   var tgtOld='#zhengji';
   var tgt=location.hash;
-  showTab(tgt,tgtOld);
-  
+  if (tgt&&tgtOld){
+    showTab(tgt,tgtOld);
+  }  
   function showTab(tgt,tgtOld){
-    if (tgt){
       $('.nav-tabs').find(`[href="${tgtOld}"]`).toggleClass('active show');
       $(document.getElementById(tgtOld.slice(1))).toggleClass('active show');
       $('.nav-tabs').find(`[href="${tgt}"]`).toggleClass('active show');
       $(document.getElementById(tgt.slice(1))).toggleClass('active show');
-    }
   }
 
   function createCard(item) {
