@@ -250,7 +250,101 @@ $(function () {
     title: '外设适配',
     name: 'waishe',
     list: [
-
+      {
+        title:'打印机',
+        list:[
+          {
+            title:'奔图P3305DN A4黑白激光单功能打印机',
+            link:'/business/general2/waishe/dayinji/201904/743.html',
+            img:'2-1Z409151RW02-lp.png'
+          },
+          {
+            title:'奔图P2505 A4黑白激光单功能打印机',
+            link:'/business/general2/waishe/dayinji/201904/750.html',
+            img:'2-1Z409151RW02-lp.png'
+          },
+          {
+            title:'奔图P5000DN A4黑白激光单功能打印机',
+            link:'/business/general2/waishe/dayinji/201904/751.html',
+            img:'2-1Z409151RW02-lp.png'
+          },
+          {
+            title:'奔图P2505DN A4红黑双色打印机',
+            link:'/business/general2/waishe/dayinji/201904/754.html',
+            img:'2-1Z409151RW02-lp.png'
+          },
+          {
+            title:'奔图P2500DN A4彩色单功能打印机',
+            link:'/business/general2/waishe/dayinji/201904/755.html',
+            img:'2-1Z409151RW02-lp.png'
+          },
+          {
+            title:'奔图P3255DN',
+            link:'/business/general2/waishe/dayinji/201906/892.html',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+          {
+            title:'奔图M6255N',
+            link:'/business/general2/waishe/dayinji/201906/893.html',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+          {
+            title:'奔图P3500DN',
+            link:'/business/general2/waishe/dayinji/201906/894.html',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+        ]
+      },
+      {
+        title:'扫描仪',
+        list:[
+          {
+            title:'奔图DS-230 ADF高速扫描仪',
+            link:'',
+            img:'2-1Z409151RW02-lp.png'
+          },
+          {
+            title:'紫光扫描仪 Uniscan F35D',
+            link:'/business/general2/waishe/saomiaoyi/201905/819.html',
+            img:'2-1Z52111064a93-lp.jpg'
+          },
+          {
+            title:'紫光扫描仪 Uniscan Q2230',
+            link:'/business/general2/waishe/saomiaoyi/201905/818.html',
+            img:'2-1Z52111012D04-lp.jpg'
+          },
+          {
+            title:'紫光扫描仪 Uniscan Q400',
+            link:'/business/general2/waishe/saomiaoyi/201905/817.html',
+            img:'2-1Z521104Z1415-lp.jpg'
+          },
+          {
+            title:'影源x2210',
+            link:'',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+          {
+            title:'影源x2620+',
+            link:'',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+          {
+            title:'虹光FB2080E',
+            link:'',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+          {
+            title:'紫光Uniscan FS6600 Plus',
+            link:'',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+          {
+            title:'紫光Uniscan Q2240',
+            link:'',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+        ]
+      }
     ]
   }
   var fangan = {

@@ -32,6 +32,7 @@
 .nav-tabs {
   display: block;
   flex: 0 0 170px;
+  border: 0;
 }
 .nav-tabs .nav-item {
   margin-bottom: 0;
@@ -90,10 +91,11 @@
 }
 .tab-content .tab-pane .card .card-top-img {
   line-height: 160px;
-  height: 180px;
+  height: 160px;
 }
 .tab-content .tab-pane .card img {
   max-width: 90%;
+  max-height: 100%;
 }
 .tab-content .tab-pane .card .card-title {
   font-size: 15px;
