@@ -46,6 +46,16 @@ $(function () {
             link: '/business/general2/zhengji/zhuomiandiannao/201906/828.html',
             img: '2-1Z522092152922-lp.jpg'
           },
+          {
+            title: '百信辰龙201F-A可靠计算机',
+            link: '/business/general2/zhengji/zhuomiandiannao/201906/763.html',
+            img: '2-1Z4160Z60B55-lp.jpg'
+          },
+          {
+            title: '中科曙光L300-G25桌面终端',
+            link: '/business/general2/zhengji/zhuomiandiannao/201906/720.html',
+            img: '1-1Z319161645131-lp.png'
+          },
         ]
       },
       {
@@ -238,9 +248,9 @@ $(function () {
             img: '2-1Z523142HJ26-lp.jpg'
           },
           {
-            title:'VxWorks板级支持包软件',
-            link:'/business/general2/xitong/qianrushicaozuoxitong/201906/1113.html',
-            img:'defaultpic.gif'
+            title: 'VxWorks板级支持包软件',
+            link: '/business/general2/xitong/qianrushicaozuoxitong/201906/1113.html',
+            img: 'defaultpic.gif'
           }
         ]
       }
@@ -251,97 +261,97 @@ $(function () {
     name: 'waishe',
     list: [
       {
-        title:'打印机',
-        list:[
+        title: '打印机',
+        list: [
           {
-            title:'奔图P3305DN A4黑白激光单功能打印机',
-            link:'/business/general2/waishe/dayinji/201904/743.html',
-            img:'2-1Z409151RW02-lp.png'
+            title: '奔图P3305DN A4黑白激光单功能打印机',
+            link: '/business/general2/waishe/dayinji/201904/743.html',
+            img: '2-1Z409151RW02-lp.png'
           },
           {
-            title:'奔图P2505 A4黑白激光单功能打印机',
-            link:'/business/general2/waishe/dayinji/201904/750.html',
-            img:'2-1Z409151RW02-lp.png'
+            title: '奔图P2505 A4黑白激光单功能打印机',
+            link: '/business/general2/waishe/dayinji/201904/750.html',
+            img: '2-1Z409151RW02-lp.png'
           },
           {
-            title:'奔图P5000DN A4黑白激光单功能打印机',
-            link:'/business/general2/waishe/dayinji/201904/751.html',
-            img:'2-1Z409151RW02-lp.png'
+            title: '奔图P5000DN A4黑白激光单功能打印机',
+            link: '/business/general2/waishe/dayinji/201904/751.html',
+            img: '2-1Z409151RW02-lp.png'
           },
           {
-            title:'奔图P2505DN A4红黑双色打印机',
-            link:'/business/general2/waishe/dayinji/201904/754.html',
-            img:'2-1Z409151RW02-lp.png'
+            title: '奔图P2505DN A4红黑双色打印机',
+            link: '/business/general2/waishe/dayinji/201904/754.html',
+            img: '2-1Z409151RW02-lp.png'
           },
           {
-            title:'奔图P2500DN A4彩色单功能打印机',
-            link:'/business/general2/waishe/dayinji/201904/755.html',
-            img:'2-1Z409151RW02-lp.png'
+            title: '奔图P2500DN A4彩色单功能打印机',
+            link: '/business/general2/waishe/dayinji/201904/755.html',
+            img: '2-1Z409151RW02-lp.png'
           },
           {
-            title:'奔图P3255DN',
-            link:'/business/general2/waishe/dayinji/201906/892.html',
-            img:'2-1Z61014560Vb.jpeg'
+            title: '奔图P3255DN',
+            link: '/business/general2/waishe/dayinji/201906/892.html',
+            img: '2-1Z61014560Vb.jpeg'
           },
           {
-            title:'奔图M6255N',
-            link:'/business/general2/waishe/dayinji/201906/893.html',
-            img:'2-1Z61014560Vb.jpeg'
+            title: '奔图M6255N',
+            link: '/business/general2/waishe/dayinji/201906/893.html',
+            img: '2-1Z61014560Vb.jpeg'
           },
           {
-            title:'奔图P3500DN',
-            link:'/business/general2/waishe/dayinji/201906/894.html',
-            img:'2-1Z61014560Vb.jpeg'
+            title: '奔图P3500DN',
+            link: '/business/general2/waishe/dayinji/201906/894.html',
+            img: '2-1Z61014560Vb.jpeg'
           },
         ]
       },
       {
-        title:'扫描仪',
-        list:[
+        title: '扫描仪',
+        list: [
           {
-            title:'奔图DS-230 ADF高速扫描仪',
-            link:'',
-            img:'2-1Z409151RW02-lp.png'
+            title: '奔图DS-230 ADF高速扫描仪',
+            link: '',
+            img: '2-1Z409151RW02-lp.png'
           },
           {
-            title:'紫光扫描仪 Uniscan F35D',
-            link:'/business/general2/waishe/saomiaoyi/201905/819.html',
-            img:'2-1Z52111064a93-lp.jpg'
+            title: '紫光扫描仪 Uniscan F35D',
+            link: '/business/general2/waishe/saomiaoyi/201905/819.html',
+            img: '2-1Z52111064a93-lp.jpg'
           },
           {
-            title:'紫光扫描仪 Uniscan Q2230',
-            link:'/business/general2/waishe/saomiaoyi/201905/818.html',
-            img:'2-1Z52111012D04-lp.jpg'
+            title: '紫光扫描仪 Uniscan Q2230',
+            link: '/business/general2/waishe/saomiaoyi/201905/818.html',
+            img: '2-1Z52111012D04-lp.jpg'
           },
           {
-            title:'紫光扫描仪 Uniscan Q400',
-            link:'/business/general2/waishe/saomiaoyi/201905/817.html',
-            img:'2-1Z521104Z1415-lp.jpg'
+            title: '紫光扫描仪 Uniscan Q400',
+            link: '/business/general2/waishe/saomiaoyi/201905/817.html',
+            img: '2-1Z521104Z1415-lp.jpg'
           },
           {
-            title:'影源x2210',
-            link:'',
-            img:'2-1Z61014560Vb.jpeg'
+            title: '影源x2210',
+            link: '',
+            img: '2-1Z61014560Vb.jpeg'
           },
           {
-            title:'影源x2620+',
-            link:'',
-            img:'2-1Z61014560Vb.jpeg'
+            title: '影源x2620+',
+            link: '',
+            img: '2-1Z61014560Vb.jpeg'
           },
           {
-            title:'虹光FB2080E',
-            link:'',
-            img:'2-1Z61014560Vb.jpeg'
+            title: '虹光FB2080E',
+            link: '',
+            img: '2-1Z61014560Vb.jpeg'
           },
           {
-            title:'紫光Uniscan FS6600 Plus',
-            link:'',
-            img:'2-1Z61014560Vb.jpeg'
+            title: '紫光Uniscan FS6600 Plus',
+            link: '',
+            img: '2-1Z61014560Vb.jpeg'
           },
           {
-            title:'紫光Uniscan Q2240',
-            link:'',
-            img:'2-1Z61014560Vb.jpeg'
+            title: '紫光Uniscan Q2240',
+            link: '',
+            img: '2-1Z61014560Vb.jpeg'
           },
         ]
       }
@@ -390,47 +400,160 @@ $(function () {
     })
   });
 
-  var tgtOld='#zhengji';
-  var tgt=location.hash;
-  if (tgt&&tgtOld){
-    showTab(tgt,tgtOld);
-  }  
-  function showTab(tgt,tgtOld){
-      $('.nav-tabs').find(`[href="${tgtOld}"]`).toggleClass('active show');
-      $(document.getElementById(tgtOld.slice(1))).toggleClass('active show');
-      $('.nav-tabs').find(`[href="${tgt}"]`).toggleClass('active show');
-      $(document.getElementById(tgt.slice(1))).toggleClass('active show');
+  var tgtOld = '#zhengji';
+  var tgt = location.hash;
+  if (tgt && tgtOld) {
+    showTab(tgt, tgtOld);
+  }
+  function showTab(tgt, tgtOld) {
+    $('.nav-tabs').find(`[href="${tgtOld}"]`).toggleClass('active show');
+    $(document.getElementById(tgtOld.slice(1))).toggleClass('active show');
+    $('.nav-tabs').find(`[href="${tgt}"]`).toggleClass('active show');
+    $(document.getElementById(tgt.slice(1))).toggleClass('active show');
   }
 
-  function createCard(item) {
+  function createItem(item) {
     var $card = $(
-      `<div class="col-3 p-1">\
-        <a href="${item.link}">\
-          <div class="card">\
-            <div class="card-top-img">\
-              <img src="/images/business/general2/${item.img}">\
-            </div>\
-            <div class="card-title">${item.title}</div>\
-          </div>\
-        </a>\
+      `<div class="col-3 p-1">
+        <a href="${item.link}">
+          <div class="card">
+            <div class="card-top-img">
+              <img src="/images/business/general2/${item.img}">
+            </div>
+            <div class="card-title">${item.title}</div>
+          </div>
+        </a>
       </div>`
     );
-    // console.log($card);
     return $card
   }
+  function createRow(list) {
+    var $row = $(`<div class="row mb-3"></div>`);
+    list.forEach((elem) => {
+      createItem(elem).appendTo($row);
+    });
+    return $row;
+  }
+
   function createSec(obj) {
     var $sec = $(
-      `<div class="m-3 sec">\
-        <div class="subtitle">${obj.title}</div>\
+      `<div class="m-3 sec">
+        <div class="subtitle">${obj.title}</div>
       </div>`
     );
-    var $row = $(`<div class="row"></div>`);
+
+    // 创建分页相关数据对象
+    var pageData = cPageData({ page: 1, pageSize: 8, count: obj.list.length });
+    // console.log(pageData);
+    // 更新当前页面显示的数据
+    var list = updateList(pageData, obj.list);
+
+    //
+    var $row = createRow(list);
     $row.appendTo($sec);
-    obj.list.forEach((elem) => {
-      createCard(elem).appendTo($row);
-    });
-    // console.log($sec.html());
+    // console.log($row);
+
+    // 创建分页按钮
+    if (pageData.pageCount > 1) {
+      var $pagination = createPagination(pageData);
+      $pagination.appendTo($sec);
+
+      // 添加事件监听器
+      var $btns = $pagination.children();
+      // console.log($btns);
+      $btns.each((i, elem) => {
+        if (i === 0) {
+          elem.onclick = function () {
+            page = 1;
+            sel(page);
+          }
+        } else if (i === 1) {
+          elem.onclick = function () {
+            if ($($btns[1]).hasClass('disabled')) { return };
+            page = pageData.page - 1;
+            sel(page);
+          }
+        } else if (i === 3) {
+          elem.onclick = function () {
+            if ($($btns[3]).hasClass('disabled')) { return };
+            page = pageData.page + 1;
+            sel(page);
+          }
+        } else if (i === 4) {
+          elem.onclick = function () {
+            page = pageData.pageCount;
+            sel(page);
+          }
+        }
+      })
+
+      function sel(page) {
+        var oldPage = pageData.page;
+        if (page === oldPage) { return };
+        pageData.page = page;
+        // console.log(page, oldPage);
+        if (page === 1 && oldPage !== 1) {
+          $($btns[1]).addClass('disabled');
+        } else if (page !== 1 && oldPage === 1) {
+          $($btns[1]).removeClass('disabled');
+        }
+        if (page === 3 && oldPage !== 3) {
+          $($btns[3]).addClass('disabled');
+        } else if (page !== pageData.pageCount && oldPage === pageData.pageCount) {
+          $($btns[3]).removeClass('disabled');
+        }
+        $($btns[2].children[0]).text(`${pageData.page}/${pageData.pageCount}`);
+        
+        list = updateList(pageData, obj.list);
+        var $oldRow=$row;
+        $row=createRow(list);
+        $oldRow.replaceWith($row);
+      }
+    }
+
     return $sec;
+  }
+
+  // 创建一组分页按钮
+  function createPagination(pageData) {
+    var $pagination = $(
+      `<ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="javascript:;">首页</a>
+        </li>
+        <li class="page-item disabled">
+          <a class="page-link" href="javascript:;">上一页</a>
+        </li>
+        <li class="page-item">
+          <div class="page-link">${pageData.page}/${pageData.pageCount}</div>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="javascript:;">下一页</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="javascript:;">末页</a>
+        </li>
+      </ul>`
+    );
+    // console.log($pagination);
+    return $pagination;
+  }
+
+  // 有关页面数据操作的函数
+  //更新当前显示的数据
+  function updateList(pageData, sourceList) {
+    var start = (pageData.page - 1) * pageData.pageSize;
+    var end = start + pageData.pageSize;
+    if (end > pageData.count) {
+      end = pageData.count;
+    }
+    tgtList = sourceList.slice(start, end);
+    return tgtList;
+  }
+  // 创建分页相关数据对象
+  function cPageData({ page, pageSize, count }) {
+    var pageCount = Math.ceil(count / pageSize);//页码总数
+    return { pageCount, pageSize, page, count };
   }
 
 })
