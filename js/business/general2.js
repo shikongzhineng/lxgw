@@ -497,7 +497,7 @@ $(function () {
         } else if (page !== 1 && oldPage === 1) {
           $($btns[1]).removeClass('disabled');
         }
-        if (page === 3 && oldPage !== 3) {
+        if (page === 2 && oldPage !== 2) {
           $($btns[3]).addClass('disabled');
         } else if (page !== pageData.pageCount && oldPage === pageData.pageCount) {
           $($btns[3]).removeClass('disabled');

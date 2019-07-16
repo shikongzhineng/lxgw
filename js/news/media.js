@@ -163,7 +163,7 @@ $(function () {
       </ul>`
     );
     var d=$pagination.children()[2];
-    for (let i = pageData.page; i <pageData.max; i++) {
+    for (let i = pageData.page; i <=pageData.max; i++) {
       createPageItem(i).insertBefore(d);
     }
     // console.log($pagination);
@@ -194,7 +194,7 @@ $(function () {
   // 创建分页相关数据对象
   function cPageData({ page, pageSize, count,num }) {
     var pageCount = Math.ceil(count / pageSize);//页码总数
-    var max=page+num;
+    var max=page+num-1;
     if (max>pageCount){max=pageCount};
     return { pageCount, pageSize, page, count,num,max };
   }
