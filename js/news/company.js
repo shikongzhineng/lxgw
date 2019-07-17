@@ -193,37 +193,66 @@ $(function () {
     return tgtList;
   }
   // 创建分页相关数据对象
-  function cPageData({ page, pageSize, count, num }) {
-    var pageCount = Math.ceil(count / pageSize);//页码总数
-    var max=page+num;
-    if (max>pageCount){max=pageCount};
-    return { pageCount, pageSize, page, num, max, count };
+  function cPageData({ page, pageSize, count,num }){
+    this.page=page;
+    this.pageSize=pageSize;
+    this.count=count;
+    this.num=num;
+    Object.defineProperties(this,{
+      pageCount:{
+        get(){
+          return Math.ceil(this.count / this.pageSize);
+        }
+      },
+      max:{
+        get(){
+          var max=this.page+this.num-1;
+          if (max>this.pageCount){max=this.pageCount};
+          return max;
+        }
+      }
+    })
   }
 
+  // 定义全局需要的数据
+  var container;
+  var pageData;
+  var $pagination;
+  var $btns;
   // 初始化 更新数据并渲染数据到相关dom元素当中
+  main();
+  function main() {
+    // 查找容器，将新闻列表及分页按钮放入其中
+    container = $('.main .container.news .content.company>.head').next().children()[0];
 
-  // 创建分页相关数据对象
-  var pageData = cPageData({ page: 1, pageSize: 10, num: 10, count: newsList.length });
-  // console.log(pageData);
-  // 更新当前页面显示的新闻
-  currentNewsList = updateList(pageData, newsList);
-  // console.log(currentNewsList);
+    // 创建分页相关数据对象
+    pageData = new cPageData({ page: 1, pageSize: 10, num: 10, count: newsList.length });
+    // 生成新闻列表并挂载到dom树中
+    genNewsList();
+    // 创建分页按钮并挂载到dom树中
+    if (pageData.pageCount > 1) {
+      genPagination();
+    }
+  }
 
-  // 查找容器，将新闻列表放入其中
-  var p = $('.main .container.news .content.company>.head').next().children()[0];
-  // console.log(p);
-  createNewsList(currentNewsList).appendTo(p);
-
-  // 创建分页按钮
-  if (pageData.pageCount > 1) {
-    var $pagination = createPagination(pageData);
-    $pagination.appendTo(p.nextElementSibling);
-
-    // 添加事件监听器
-    var $btns = $pagination.children();
+  // 生成新闻列表并挂载到dom树中
+  function genNewsList(){
+    currentNewsList = updateList(pageData, newsList);    
+    $(container.firstElementChild).replaceWith(createNewsList(currentNewsList));
+  }
+  // 生成分页按钮并挂载到dom树中
+  function genPagination() {
+    $pagination = createPagination(pageData);
+    $(container.nextElementSibling.firstElementChild).replaceWith($pagination);
+    $btns = $pagination.children();
     // console.log($btns);
     $($btns[2]).addClass('active');
-    $pagination.children().each((i, elem) => {
+    addListen();// 为分页按钮添加事件监听器
+  }
+
+  // 为分页按钮添加事件监听器
+  function addListen() {
+    $btns.each((i, elem) => {
       if (i === 0) {
         elem.onclick = function () {
           page = 1;
@@ -235,13 +264,13 @@ $(function () {
           page = pageData.page - 1;
           sel(page);
         }
-      } else if (i === pageData.pageCount + 2) {
+      } else if (i === pageData.max + 2) {
         elem.onclick = function () {
-          if ($($btns[pageData.pageCount + 2]).hasClass('disabled')) { return };
+          if ($($btns[pageData.max + 2]).hasClass('disabled')) { return };
           page = pageData.page + 1;
           sel(page);
         }
-      } else if (i === pageData.pageCount + 3) {
+      } else if (i === pageData.max + 3) {
         elem.onclick = function () {
           page = pageData.pageCount;
           sel(page);
@@ -253,27 +282,26 @@ $(function () {
         }
       }
     })
-
-    function sel(page) {
-      var oldPage = pageData.page;
-      if (page === oldPage) { return };
-      pageData.page = page;
-      // console.log(page, oldPage);
-      $($btns[oldPage + 1]).removeClass('active');
-      $($btns[page + 1]).addClass('active');
-      if (page === 1 && oldPage !== 1) {
-        $($btns[1]).addClass('disabled');
-      } else if (page !== 1 && oldPage === 1) {
-        $($btns[1]).removeClass('disabled');
-      }
-      if (page === pageData.pageCount && oldPage !== pageData.pageCount) {
-        $($btns[pageData.pageCount + 2]).addClass('disabled');
-      } else if (page !== pageData.pageCount && oldPage === pageData.pageCount) {
-        $($btns[pageData.pageCount + 2]).removeClass('disabled');
-      }
-      currentNewsList = updateList(pageData, newsList);
-      $(p.firstElementChild).replaceWith(createNewsList(currentNewsList));
-    }
   }
-
+  // 
+  function sel(page) {
+    var oldPage = pageData.page;
+    if (page === oldPage) { return };
+    pageData.page = page;
+    // console.log(page, oldPage);
+    $($btns[oldPage + 1]).removeClass('active');
+    $($btns[page + 1]).addClass('active');
+    if (page === 1 && oldPage !== 1) {
+      $($btns[1]).addClass('disabled');
+    } else if (page !== 1 && oldPage === 1) {
+      $($btns[1]).removeClass('disabled');
+    }
+    if (page === pageData.max && oldPage !== pageData.pageCount) {
+      $($btns[pageData.max + 2]).addClass('disabled');
+    } else if (page !== pageData.max && oldPage === pageData.max) {
+      $($btns[pageData.max + 2]).removeClass('disabled');
+    }
+    if (page === pageData.max && pageData.max < pageData.Count) { genPagination() }
+    genNewsList();
+  }
 })

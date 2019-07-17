@@ -393,24 +393,6 @@ $(function () {
     list: []
   }
   var list = [zhengji, xitong, waishe, fangan, application, open, publication, jiaoxue, wangluoshebei, bankachanpin];
-  list.forEach((elem) => {
-    var $p = $(document.getElementById(elem.name));
-    elem.list.forEach(elem => {
-      createSec(elem).appendTo($p);
-    })
-  });
-
-  var tgtOld = '#zhengji';
-  var tgt = location.hash;
-  if (tgt && tgtOld) {
-    showTab(tgt, tgtOld);
-  }
-  function showTab(tgt, tgtOld) {
-    $('.nav-tabs').find(`[href="${tgtOld}"]`).toggleClass('active show');
-    $(document.getElementById(tgtOld.slice(1))).toggleClass('active show');
-    $('.nav-tabs').find(`[href="${tgt}"]`).toggleClass('active show');
-    $(document.getElementById(tgt.slice(1))).toggleClass('active show');
-  }
 
   function createItem(item) {
     var $card = $(
@@ -434,6 +416,30 @@ $(function () {
     });
     return $row;
   }
+  // 创建一组分页按钮
+  function createPagination(pageData) {
+    var $pagination = $(
+      `<ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="javascript:;">首页</a>
+        </li>
+        <li class="page-item disabled">
+          <a class="page-link" href="javascript:;">上一页</a>
+        </li>
+        <li class="page-item">
+          <div class="page-link">${pageData.page}/${pageData.pageCount}</div>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="javascript:;">下一页</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="javascript:;">末页</a>
+        </li>
+      </ul>`
+    );
+    // console.log($pagination);
+    return $pagination;
+  }
 
   function createSec(obj) {
     var $sec = $(
@@ -441,7 +447,6 @@ $(function () {
         <div class="subtitle">${obj.title}</div>
       </div>`
     );
-
     // 创建分页相关数据对象
     var pageData = cPageData({ page: 1, pageSize: 8, count: obj.list.length });
     // console.log(pageData);
@@ -457,10 +462,8 @@ $(function () {
     if (pageData.pageCount > 1) {
       var $pagination = createPagination(pageData);
       $pagination.appendTo($sec);
-
-      // 添加事件监听器
       var $btns = $pagination.children();
-      // console.log($btns);
+      // 添加事件监听器
       $btns.each((i, elem) => {
         if (i === 0) {
           elem.onclick = function () {
@@ -514,30 +517,6 @@ $(function () {
     return $sec;
   }
 
-  // 创建一组分页按钮
-  function createPagination(pageData) {
-    var $pagination = $(
-      `<ul class="pagination">
-        <li class="page-item">
-          <a class="page-link" href="javascript:;">首页</a>
-        </li>
-        <li class="page-item disabled">
-          <a class="page-link" href="javascript:;">上一页</a>
-        </li>
-        <li class="page-item">
-          <div class="page-link">${pageData.page}/${pageData.pageCount}</div>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="javascript:;">下一页</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="javascript:;">末页</a>
-        </li>
-      </ul>`
-    );
-    // console.log($pagination);
-    return $pagination;
-  }
 
   // 有关页面数据操作的函数
   //更新当前显示的数据
@@ -554,6 +533,25 @@ $(function () {
   function cPageData({ page, pageSize, count }) {
     var pageCount = Math.ceil(count / pageSize);//页码总数
     return { pageCount, pageSize, page, count };
+  }
+  
+  list.forEach((elem) => {
+    var $p = $(document.getElementById(elem.name));
+    elem.list.forEach(elem => {
+      createSec(elem).appendTo($p);
+    })
+  });
+
+  var tgtOld = '#zhengji';
+  var tgt = location.hash;
+  if (tgt && tgtOld) {
+    showTab(tgt, tgtOld);
+  }
+  function showTab(tgt, tgtOld) {
+    $('.nav-tabs').find(`[href="${tgtOld}"]`).toggleClass('active show');
+    $(document.getElementById(tgtOld.slice(1))).toggleClass('active show');
+    $('.nav-tabs').find(`[href="${tgt}"]`).toggleClass('active show');
+    $(document.getElementById(tgt.slice(1))).toggleClass('active show');
   }
 
 })
