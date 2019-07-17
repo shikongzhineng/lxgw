@@ -181,8 +181,8 @@ $(function () {
   }
 
   // 有关页面数据操作的函数
-  // 更新当前页面显示的新闻
-  function updateList(pageData, sourceList) {
+  // 创建当前页面显示的新闻列表
+  function createList(pageData, sourceList) {
     var start = (pageData.page - 1) * pageData.pageSize;
     var end = start + pageData.pageSize;
     if (end > pageData.count) {
@@ -192,26 +192,50 @@ $(function () {
     tgtList = sourceList.slice(start, end);
     return tgtList;
   }
-  // 创建分页相关数据对象
-  function cPageData({ page, pageSize, count,num }){
-    this.page=page;
-    this.pageSize=pageSize;
-    this.count=count;
-    this.num=num;
-    Object.defineProperties(this,{
-      pageCount:{
-        get(){
+  // 创建分页数据对象
+  function cPageData({ page, pageSize, count, num }) {
+    this.page = page;
+    this.pageSize = pageSize;
+    this.count = count;
+    this.num = num;
+    this.min = page;
+    this.oldPage = page;
+    Object.defineProperties(this, {
+      pageCount: {
+        get() {
           return Math.ceil(this.count / this.pageSize);
         }
       },
-      max:{
-        get(){
-          var max=this.page+this.num-1;
-          if (max>this.pageCount){max=this.pageCount};
+      max: {
+        get() {
+          var max = this.min + (this.num - 1);
+          if (max >= this.pageCount) { max = this.pageCount };
           return max;
+        },
+        set(val) {
+          console.log(val);
+          if (val >= this.pageCount && (this.pageCount % (this.num - 1)) !== 0) {
+            this.min = this.pageCount - (this.pageCount % (this.num - 1) - 1);
+            console.log(this.pageCount % this.num);
+          } else {
+            this.min = val - (this.num - 1);
+          }
         }
       }
     })
+  }
+  cPageData.prototype.update=function(page){
+    this.oldPage = this.page;
+    this.page = page;
+    if (this.page === this.max && this.max < this.pageCount) {
+      this.min = this.page;
+    } else if (this.page < this.min && this.min > 1 && this.page !== 1) {
+      this.max = this.page + 1;
+    } else if (this.page === 1 && this.min !== 1) {
+      this.min = 1;
+    } else if (this.page === this.pageCount && this.max !== this.pageCount) {
+      this.max = this.pageCount;
+    }
   }
 
   // 定义全局需要的数据
@@ -219,12 +243,13 @@ $(function () {
   var pageData;
   var $pagination;
   var $btns;
+  
   // 初始化 更新数据并渲染数据到相关dom元素当中
   main();
   function main() {
     // 查找容器，将新闻列表及分页按钮放入其中
     container = $('.main .container.news .content.company>.head').next().children()[0];
-
+    // console.log(container);
     // 创建分页相关数据对象
     pageData = new cPageData({ page: 1, pageSize: 10, num: 10, count: newsList.length });
     // 生成新闻列表并挂载到dom树中
@@ -236,20 +261,44 @@ $(function () {
   }
 
   // 生成新闻列表并挂载到dom树中
-  function genNewsList(){
-    currentNewsList = updateList(pageData, newsList);    
+  function genNewsList() {
+    currentNewsList = createList(pageData, newsList);
     $(container.firstElementChild).replaceWith(createNewsList(currentNewsList));
   }
-  // 生成分页按钮并挂载到dom树中
+  // 创建分页按钮并挂载到dom树中
   function genPagination() {
     $pagination = createPagination(pageData);
     $(container.nextElementSibling.firstElementChild).replaceWith($pagination);
     $btns = $pagination.children();
     // console.log($btns);
-    $($btns[2]).addClass('active');
-    addListen();// 为分页按钮添加事件监听器
+    genBtnsClass();
+    addListen(); // 添加事件监听器
   }
-
+  // 初始化分页按钮的样式（设置类名）
+  function genBtnsClass() {
+    $($btns[pageData.page - pageData.min + 2]).addClass('active');
+    if (pageData.page === 1) {
+      $($btns[1]).addClass('disabled');
+    } else if (pageData.page === pageData.pageCount) {
+      $($btns[pageData.max - pageData.min + 3]).addClass('disabled');
+    };
+  }
+  // 更新分页按钮的样式（设置类名）
+  function updateBtnsClass(){
+    $($btns[pageData.oldPage - pageData.min + 2]).removeClass('active');
+    $($btns[pageData.page - pageData.min + 2]).addClass('active');
+    if (pageData.page === 1 && pageData.oldPage !== 1) {
+      $($btns[1]).addClass('disabled');
+    } else if (pageData.page !== 1 && pageData.oldPage === 1) {
+      $($btns[1]).removeClass('disabled');
+    }
+    if (pageData.page === pageData.pageCount && pageData.oldPage !== pageData.pageCount) {
+      console.log('end');
+      $($btns[$btns.length - 2]).addClass('disabled');
+    } else if (pageData.page !== pageData.pageCount && pageData.oldPage === pageData.pageCount) {
+      $($btns[$btns.length - 2]).removeClass('disabled');
+    }
+  }
   // 为分页按钮添加事件监听器
   function addListen() {
     $btns.each((i, elem) => {
@@ -264,44 +313,36 @@ $(function () {
           page = pageData.page - 1;
           sel(page);
         }
-      } else if (i === pageData.max + 2) {
+      } else if (i === $btns.length - 2) {
         elem.onclick = function () {
-          if ($($btns[pageData.max + 2]).hasClass('disabled')) { return };
+          if ($($btns[$btns.length - 2]).hasClass('disabled')) { return };
           page = pageData.page + 1;
           sel(page);
         }
-      } else if (i === pageData.max + 3) {
+      } else if (i === $btns.length - 1) {
         elem.onclick = function () {
           page = pageData.pageCount;
           sel(page);
         }
       } else {
         elem.onclick = function () {
-          page = i - 1;
+          page = pageData.min + i - 2;
           sel(page);
         }
       }
     })
   }
-  // 
+  //
   function sel(page) {
-    var oldPage = pageData.page;
-    if (page === oldPage) { return };
-    pageData.page = page;
-    // console.log(page, oldPage);
-    $($btns[oldPage + 1]).removeClass('active');
-    $($btns[page + 1]).addClass('active');
-    if (page === 1 && oldPage !== 1) {
-      $($btns[1]).addClass('disabled');
-    } else if (page !== 1 && oldPage === 1) {
-      $($btns[1]).removeClass('disabled');
-    }
-    if (page === pageData.max && oldPage !== pageData.pageCount) {
-      $($btns[pageData.max + 2]).addClass('disabled');
-    } else if (page !== pageData.max && oldPage === pageData.max) {
-      $($btns[pageData.max + 2]).removeClass('disabled');
-    }
-    if (page === pageData.max && pageData.max < pageData.Count) { genPagination() }
+    if (page===pageData.page){return};
+    var min=pageData.min;
+    pageData.update(page);
     genNewsList();
+    if (min!==pageData.min){
+      genPagination();
+      return;
+    };    
+    updateBtnsClass($btns,pageData);
   }
+
 })
