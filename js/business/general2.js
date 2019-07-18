@@ -360,12 +360,289 @@ $(function () {
   var fangan = {
     title: '业务方案',
     name: 'fangan',
-    list: []
+    list: [
+      {
+        title:'中间件',
+        list:[
+          {
+            title:'东方通应用服务器软件',
+            link:'javascript:;',
+            img:'2-1Z32Z9342A93-lp.jpg'
+          },
+          {
+            title:'中创中间件',
+            link:'javascript:;',
+            img:'1-1Z31QQ924147-lp.png'
+          },
+          {
+            title:'金蝶天燕应用服务器',
+            link:'javascript:;',
+            img:'2-1Z416161G4624-lp.png'
+          },
+          {
+            title:'金蝶天燕消息中间件',
+            link:'javascript:;',
+            img:'2-1Z4161F535K9-lp.jpg'
+          },
+        ]
+      },
+      {
+        title:'数据库',
+        list:[
+          {
+            title:'达梦数据库管理系统龙芯版',
+            link:'javacript:;',
+            img:'2-1Z329155A2Y6.jpg'
+          },
+          {
+            title:'神通数据库',
+            link:'javacript:;',
+            img:'2-1Z41516224L05-lp.jpg'
+          },
+          {
+            title:'金仓数据库管理系统',
+            link:'javacript:;',
+            img:'58.jpg'
+          },
+          {
+            title:'南大数据库',
+            link:'javacript:;',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+          {
+            title:'汉高数据库',
+            link:'javacript:;',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+          {
+            title:'优炫数据库',
+            link:'javacript:;',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+          {
+            title:'开源Mysql/Mariadb',
+            link:'javacript:;',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+        ]
+      },
+      {
+        title:'云平台',
+        list:[
+          {
+            title:'希云cSphere容器解决方案',
+            link:'javascript:;',
+            img:'2-1Z4261F602R9-lp.jpg'
+          },
+          {
+            title:'天熠云',
+            link:'javascript:;',
+            img:'2-1Z40110160R95-lp.jpg'
+          },
+          {
+            title:'DaoCloud Enterprise云平台',
+            link:'javascript:;',
+            img:'1-1ZF2155224203.png'
+          },
+          {
+            title:'龙芯KVM',
+            link:'javascript:;',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+        ]
+      },
+      {
+        title:'虚拟云桌面',
+        list:[
+          {
+            title:'同方虚拟云桌面系统',
+            link:'javascript:;',
+            img:'1-1ZF3092959233.png'
+          },
+          {
+            title:'升腾威讯云系统（龙芯云桌面解决方案）',
+            link:'javascript:;',
+            img:'1-1ZF3095155446.png'
+          },
+          {
+            title:'湖南麒麟安全云桌面系统（龙芯版）',
+            link:'javascript:;',
+            img:'1-1ZF3101315963.png'
+          },
+        ]
+      },
+      {
+        title:'大数据',
+        list:[
+          {
+            title:'红象云滕大数据基础软件产品',
+            link:'javascript:;',
+            img:'2-1Z5211AK2408-lp.jpg'
+          },
+          {
+            title:'金蝶天燕大数据集成',
+            link:'javascript:;',
+            img:'2-1Z4161H34L19-lp.png'
+          },
+        ]
+      },
+      {
+        title:'高可用集群',
+        list:[
+          {
+            title:'中标麒麟高可用集群软件',
+            link:'javascript:;',
+            img:'57.jpg'
+          },
+        ]
+      },
+      {
+        title:'邮件',
+        list:[
+          {
+            title:'Coremail安全增强电子邮件系统',
+            link:'javascript:;',
+            img:'2-1Z523095402E9-lp.jpg'
+          },
+          {
+            title:'中标麒麟安全增强电子邮件系统',
+            link:'javascript:;',
+            img:'2-1Z409164Q03H-lp.jpg'
+          },
+          {
+            title:'安宁安全增强电子邮件',
+            link:'javascript:;',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+          {
+            title:'时代亿信电子邮件',
+            link:'javascript:;',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+          {
+            title:'安鼎电子邮件',
+            link:'javascript:;',
+            img:'2-1Z61014560Vb.jpeg'
+          },
+        ]
+      },
+    ]
   }
   var application = {
     title: '桌面应用',
     name: 'application',
-    list: []
+    list: [
+      {
+        title:'流式文档',
+        list:[
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+        ]
+      },
+      {
+        title:'版式文档',
+        list:[
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+        ]
+      },
+      {
+        title:'电子签章',
+        list:[
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+        ]
+      },
+      {
+        title:'输入法',
+        list:[
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+        ]
+      },
+      {
+        title:'媒体图像',
+        list:[
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+          {
+            title:'',
+            link:'javascript:;',
+            img:''
+          },
+        ]
+      },
+    ]
   }
   var open = {
     title: '开源生态',
@@ -449,14 +726,10 @@ $(function () {
     );
     // 创建分页相关数据对象
     var pageData = cPageData({ page: 1, pageSize: 8, count: obj.list.length });
-    // console.log(pageData);
     // 更新当前页面显示的数据
-    var list = updateList(pageData, obj.list);
-
-    //
+    var list = createList(pageData, obj.list);
     var $row = createRow(list);
     $row.appendTo($sec);
-    // console.log($row);
 
     // 创建分页按钮
     if (pageData.pageCount > 1) {
@@ -507,7 +780,7 @@ $(function () {
         }
         $($btns[2].children[0]).text(`${pageData.page}/${pageData.pageCount}`);
         
-        list = updateList(pageData, obj.list);
+        list = createList(pageData, obj.list);
         var $oldRow=$row;
         $row=createRow(list);
         $oldRow.replaceWith($row);
@@ -520,7 +793,7 @@ $(function () {
 
   // 有关页面数据操作的函数
   //更新当前显示的数据
-  function updateList(pageData, sourceList) {
+  function createList(pageData, sourceList) {
     var start = (pageData.page - 1) * pageData.pageSize;
     var end = start + pageData.pageSize;
     if (end > pageData.count) {
@@ -534,7 +807,8 @@ $(function () {
     var pageCount = Math.ceil(count / pageSize);//页码总数
     return { pageCount, pageSize, page, count };
   }
-  
+
+  // main 主程序
   list.forEach((elem) => {
     var $p = $(document.getElementById(elem.name));
     elem.list.forEach(elem => {
