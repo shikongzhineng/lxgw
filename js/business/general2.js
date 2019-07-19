@@ -391,37 +391,37 @@ $(function () {
         list:[
           {
             title:'达梦数据库管理系统龙芯版',
-            link:'javacript:;',
+            link:'javascript:;',
             img:'2-1Z329155A2Y6.jpg'
           },
           {
             title:'神通数据库',
-            link:'javacript:;',
+            link:'javascript:;',
             img:'2-1Z41516224L05-lp.jpg'
           },
           {
             title:'金仓数据库管理系统',
-            link:'javacript:;',
+            link:'javascript:;',
             img:'58.jpg'
           },
           {
             title:'南大数据库',
-            link:'javacript:;',
+            link:'javascript:;',
             img:'2-1Z61014560Vb.jpeg'
           },
           {
             title:'汉高数据库',
-            link:'javacript:;',
+            link:'javascript:;',
             img:'2-1Z61014560Vb.jpeg'
           },
           {
             title:'优炫数据库',
-            link:'javacript:;',
+            link:'javascript:;',
             img:'2-1Z61014560Vb.jpeg'
           },
           {
             title:'开源Mysql/Mariadb',
-            link:'javacript:;',
+            link:'javascript:;',
             img:'2-1Z61014560Vb.jpeg'
           },
         ]
