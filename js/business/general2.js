@@ -536,14 +536,14 @@ $(function () {
         title:'流式文档',
         list:[
           {
-            title:'',
+            title:'WPS Office 2019 for Linux 专业版办公软件',
             link:'javascript:;',
-            img:''
+            img:'5.jpg'
           },
           {
-            title:'',
+            title:'永中Office',
             link:'javascript:;',
-            img:''
+            img:'2-1Z416093221429-lp.jpg'
           },
         ]
       },
@@ -551,14 +551,14 @@ $(function () {
         title:'版式文档',
         list:[
           {
-            title:'',
+            title:'福昕OFD版式办公套件软件',
             link:'javascript:;',
-            img:''
+            img:'2-1Z523100121P6-lp.jpg'
           },
           {
-            title:'',
+            title:'数科OFD文档处理软件',
             link:'javascript:;',
-            img:''
+            img:'59.jpg'
           },
         ]
       },
@@ -566,39 +566,39 @@ $(function () {
         title:'电子签章',
         list:[
           {
-            title:'',
+            title:'中安源SIS',
             link:'javascript:;',
-            img:''
+            img:'2-1Z61014560Vb.jpeg'
+          },
+          {
+            title:'方正V5.2',
+            link:'javascript:;',
+            img:'2-1Z61014560Vb.jpeg'
           },
           {
             title:'',
             link:'javascript:;',
-            img:''
+            img:'2-1Z61014560Vb.jpeg'
           },
           {
             title:'',
             link:'javascript:;',
-            img:''
+            img:'2-1Z61014560Vb.jpeg'
           },
           {
             title:'',
             link:'javascript:;',
-            img:''
+            img:'2-1Z61014560Vb.jpeg'
           },
           {
             title:'',
             link:'javascript:;',
-            img:''
+            img:'2-1Z61014560Vb.jpeg'
           },
           {
             title:'',
             link:'javascript:;',
-            img:''
-          },
-          {
-            title:'',
-            link:'javascript:;',
-            img:''
+            img:'2-1Z61014560Vb.jpeg'
           },
         ]
       },
@@ -608,17 +608,17 @@ $(function () {
           {
             title:'',
             link:'javascript:;',
-            img:''
+            img:'2-1Z61014560Vb.jpeg'
           },
           {
             title:'',
             link:'javascript:;',
-            img:''
+            img:'2-1Z61014560Vb.jpeg'
           },
           {
             title:'',
             link:'javascript:;',
-            img:''
+            img:'2-1Z61014560Vb.jpeg'
           },
         ]
       },
@@ -628,17 +628,17 @@ $(function () {
           {
             title:'',
             link:'javascript:;',
-            img:''
+            img:'2-1Z61014560Vb.jpeg'
           },
           {
             title:'',
             link:'javascript:;',
-            img:''
+            img:'2-1Z61014560Vb.jpeg'
           },
           {
             title:'',
             link:'javascript:;',
-            img:''
+            img:'2-1Z61014560Vb.jpeg'
           },
         ]
       },

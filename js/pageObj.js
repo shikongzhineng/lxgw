@@ -47,7 +47,7 @@
     return tgtList;
   }
   // 创建分页相关数据对象
-  function PageData({ page = 1, pageSize = 10, count, num = 11 }) {
+  function PageData({ page = 1, pageSize = 10, count=0, num = 11 }) {
     this.page = page;
     this.pageSize = pageSize;
     this.count = count;
@@ -106,29 +106,40 @@
 })();
 (function () {
   // 分页按钮
-  function PageObj({ list, pageData }) {
-    this.list = list;
+  function PageObj(pageData) {
     this.currentList = null;
     this.pageData = pageData;
     this.$listGroup = null
     this.$pagination = null;
     this.$pageBtns = null;
   }
-  // 生成列表
-  PageObj.prototype.genListGroup = function () {
+  // 获取当页数据
+  PageObj.prototype.genList=function(list,$parent){
+    PageObj.prototype.createList=createList;
+    this.list=list;
+    if(!this.pageData.count){this.pageData.count=this.list.length;}
     this.currentList = this.createList(this.pageData, this.list);
-    this.$listGroup = this.createListGoup(this.currentList);
+    this.genListGroup($parent);
   }
-  // 更新列表
-  PageObj.prototype.updateListGroup = function () {
+  PageObj.prototype.updateList=function(){
     this.currentList = this.createList(this.pageData, this.list);
+    this.updateListGroup();
+  }
+  // 生成列表组
+  PageObj.prototype.genListGroup = function ($parent) {    
+    this.$listGroup = this.createListGoup(this.currentList);
+    this.$listGroup.appendTo($parent);
+  }
+  // 更新列表组
+  PageObj.prototype.updateListGroup = function () {
     let $oldListGroup = this.$listGroup;
     this.$listGroup = this.createListGoup(this.currentList);
     $oldListGroup.replaceWith(this.$listGroup);
   }
   // 创建分页按钮
-  PageObj.prototype.genPagination = function () {
+  PageObj.prototype.genPagination = function ($parent) {
     this.$pagination = this.createPagination(this.pageData);
+    this.$pagination.appendTo($parent);
     this.$pageBtns = this.$pagination.children();
     this.genPageBtnsClass();
     this.pageBtnsAddListen(); // 添加事件监听器
@@ -205,18 +216,20 @@
     if (page === this.pageData.page) { return };
     var min = this.pageData.min;
     this.pageData.update(page);
-    this.updateListGroup();
     if (min !== this.pageData.min) {
       this.updatePagination();
       return;
     };
     this.updatePageBtnsClass();
+    // 更新列表组
+    this.updateList();
   }
-  // 
-  PageObj.prototype.createList=createList;
+  
   PageObj.prototype.createPagination=createPagination;
-  PageObj.prototype.initFn = function (createListGoup) {
-    this.createListGoup = createListGoup;    
+  PageObj.prototype.initFn = function ({createListGoup,genList,updateList}) {
+    this.createListGoup = createListGoup;
+    if (genList){this.genList=genList};
+    if(updateList){this.updateList=updateList}
   }
 
   Object.defineProperties(window, {

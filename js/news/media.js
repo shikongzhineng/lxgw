@@ -152,16 +152,14 @@ $(function () {
     container = $(selector).children()[1];
     console.log(container);
     // 创建分页相关数据对象
-    pageData = new PageData({ count: newsList.length });
+    pageData = new PageData({});
     // 生成新闻列表并挂载到dom树中
-    var pageObj = new PageObj({ list:newsList, pageData });
-    pageObj.initFn(createNewsList);
-    pageObj.genListGroup();
-    $(container.firstElementChild.firstElementChild).replaceWith(pageObj.$listGroup)
+    var pageObj = new PageObj(pageData);
+    pageObj.initFn({createListGoup:createNewsList});
+    pageObj.genList(newsList,container.firstElementChild);
     // 创建分页按钮并挂载到dom树中
     if (pageData.pageCount > 1) {
-      pageObj.genPagination();
-      $(container.lastElementChild.firstElementChild).replaceWith(pageObj.$pagination)
+      pageObj.genPagination(container.lastElementChild);
     }
   }
   main(newsList,'.main .container.news .content.medias');

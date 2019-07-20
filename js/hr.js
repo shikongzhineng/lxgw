@@ -1,9 +1,9 @@
-$(function(){
+$(function () {
   var list = [
     {
-      title:'校园招聘',
-      name:'xyzp',
-      list:  [
+      title: '校园招聘',
+      name: 'xyzp',
+      list: [
         { title: '◆ 【校园招聘】硬件工程师', link: 'javascript:;' },
         { title: '◆ 【校园招聘】销售支持与服务', link: 'javascript:;' },
         { title: '◆ 【校园招聘】技术支持', link: 'javascript:;' },
@@ -23,9 +23,9 @@ $(function(){
       ],
     },
     {
-      title:'社会招聘',
-      name:'shzp',
-      list:[
+      title: '社会招聘',
+      name: 'shzp',
+      list: [
         { title: '◆ 【社会招聘】技术支持工程师', link: 'javascript:;' },
         { title: '◆ 【社会招聘】销售经理（龙芯大学计划）', link: 'javascript:;' },
         { title: '◆ 【社会招聘】Linux操作系统开源软件工程师', link: 'javascript:;' },
@@ -33,7 +33,7 @@ $(function(){
       ]
     }
   ]
-  
+
   // 创建一个列表组
   function createListGoup(list) {
     var $listGroup = $(
@@ -63,33 +63,31 @@ $(function(){
       `<div class="tab-item ${obj.name}">
                   
       </div>`
-    );  
+    );
     // 分页按钮
-    var list=obj.list;  
+    var list = obj.list;
     // 创建分页相关数据对象
-    var pageData = new PageData({ page: 1, pageSize: 10, num: 6, count: list.length });
+    var pageData = new PageData({ count: list.length });
     // 生成列表并挂载到dom树中
-    var pageObj = new PageObj({ list, pageData });
-    pageObj.initFn(createListGoup);
-    pageObj.genListGroup();
-    pageObj.$listGroup.appendTo($tabItem);
+    var pageObj = new PageObj(pageData);
+    pageObj.initFn({ createListGoup });
+    pageObj.genList(list, $tabItem);
     // 创建分页按钮并挂载到dom树中
     if (pageData.pageCount > 1) {
-      pageObj.genPagination();
-      pageObj.$pagination.appendTo($tabItem);
+      pageObj.genPagination($tabItem);
     }
-    
+
     return $tabItem;
   }
-  
-  
+
+
   // 定义全局需要的数据
   var $container;
   // 标签页导航
   var tabsData;
   var $tabs;
   var $tabContents;
-  
+
   // 初始化 更新数据并渲染数据到相关dom元素当中
   main();
   function main() {
@@ -97,15 +95,15 @@ $(function(){
     $container = $('.content.hr>.campus>.sec1');
     // console.log($container);
     gen();
-    initTabs();  
+    initTabs();
   }
   function gen() {
-    let $p=$container.children()[1];
-    $tabContents=list.forEach((elem, i) => {
+    let $p = $container.children()[1];
+    $tabContents = list.forEach((elem, i) => {
       createTabItem(elem).appendTo($p);
     })
   }
-  
+
   // 初始化标签页
   function initTabs() {
     tabsData = { tgt: 0, tgtOld: 0 };
