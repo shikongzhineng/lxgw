@@ -1,28 +1,4 @@
 (function () {
-  // 创建一个列表组
-  function createListGoup(list) {
-    var $listGroup = $(
-      `<ul class="list-group">
-        
-      </ul>`
-    );
-    list.forEach(elem => {
-      createListItem(elem).appendTo($listGroup);
-    });
-    return $listGroup;
-  }
-  //创建一个列表项
-  function createListItem(item) {
-    var $listItem = $(
-      `<li class="list-group-item">
-        <a href="${item.link}">
-          ${item.title}
-        </a>
-      </li>`
-    );
-    return $listItem;
-  }
-
   // 创建一组分页按钮
   function createPagination(pageData) {
     var $pagination = $(
@@ -122,9 +98,6 @@
     },
     createList: {
       value: createList
-    },
-    createListGoup: {
-      value: createListGoup
     },
     createPagination: {
       value: createPagination

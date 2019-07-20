@@ -677,7 +677,7 @@ $(function () {
         <a href="${item.link}">
           <div class="card">
             <div class="card-top-img">
-              <img src="/images/business/general2/${item.img}">
+              <img src="../../images/business/general2/${item.img}">
             </div>
             <div class="card-title">${item.title}</div>
           </div>
