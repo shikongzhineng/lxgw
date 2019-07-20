@@ -38,7 +38,7 @@
   width: 30px;
   height: 100%;
   cursor: pointer;
-  background: url('/images/true.png') left center no-repeat;
+  background: url('../images/true.png') left center no-repeat;
   position: absolute;
   top: 0;
   right: 0;

@@ -1,6 +1,6 @@
 .main>.head {
   height: 400px;
-  background: url('/images/business/tongyong_top_pic.jpg') 52% no-repeat;
+  background: url('../images/business/tongyong_top_pic.jpg') 52% no-repeat;
 }
 
 .main>.head .article {

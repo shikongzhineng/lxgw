@@ -6,7 +6,7 @@
 }
 
 .main>.head {
-  background: url('/images/product/top_img4.jpg') 52%  no-repeat;
+  background: url('../images/product/top_img4.jpg') 52%  no-repeat;
 }
 .main article {
   padding-bottom: 30px;

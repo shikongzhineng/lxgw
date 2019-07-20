@@ -56,7 +56,7 @@ $(function () {
       $(
         `<div class="col">
           <a href="${elem.link}" target="_blank">
-            <img src="/images/about/links/${elem.img}" alt="">
+            <img src="../../images/about/links/${elem.img}" alt="">
           </a>
         </div>`
       ).appendTo(fragment);

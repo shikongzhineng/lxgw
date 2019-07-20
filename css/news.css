@@ -1,5 +1,5 @@
 .main>.head {
-  background: url('/images/news/top_img2.jpg') 52%  no-repeat;
+  background: url('../images/news/top_img2.jpg') 52%  no-repeat;
 }
 .list-group-item {
   padding: 16px;
