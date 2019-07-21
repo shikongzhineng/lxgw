@@ -47,7 +47,7 @@
     return tgtList;
   }
   // 创建分页相关数据对象
-  function PageData({ page = 1, pageSize = 10, count=0, num = 11 }) {
+  function PageData({ page = 1, pageSize = 10, count, num = 11 }) {
     this.page = page;
     this.pageSize = pageSize;
     this.count = count;
@@ -101,40 +101,73 @@
     },
     createPagination: {
       value: createPagination
+    },
+    createPageItem: {
+      value: createPageItem
+    },
+    genList: {
+      value: genList
+    },
+    updateList: {
+      value: updateList
     }
   })
+  // 获取当页数据
+  async function genList(list) {
+    var val=await new Promise((resolve)=>{
+      var t=setTimeout(()=>{
+        var clist = createList(this.pageData, list);
+        resolve({list:clist,count:list.length});
+        clearTimeout(t);
+      },100)
+    })
+    this.list = list;
+    this.currentList=val.list;
+    if (!this.pageData.count) { this.pageData.count = val.count; }
+  }
+  async function updateList() {
+    let bool=this.$oldListGroup===this.$listGroup;
+    console.log(bool,'111111')
+    this.$oldListGroup = this.$listGroup;
+    console.log(this.$oldListGroup===this.$listGroup,'00000')
+    if (bool===true){
+      console.log('列表更新未完成');
+      return;
+    }
+    var val = await new Promise((resolve) => {
+      var t = setTimeout(() => {
+        var list = createList(this.pageData, this.list);
+        resolve({ list });
+        clearTimeout(t);
+      },200)
+    })
+    this.currentList = val.list;
+    console.log(this.currentList[0].title);
+    console.log(this.pageData.page,'page end');
+    this.updateListGroup();
+  }
 })();
 (function () {
   // 分页按钮
   function PageObj(pageData) {
     this.currentList = null;
     this.pageData = pageData;
-    this.$listGroup = null
+    this.$listGroup = null;
+    this.$oldListGroup=null;
     this.$pagination = null;
     this.$pageBtns = null;
   }
-  // 获取当页数据
-  PageObj.prototype.genList=function(list,$parent){
-    PageObj.prototype.createList=createList;
-    this.list=list;
-    if(!this.pageData.count){this.pageData.count=this.list.length;}
-    this.currentList = this.createList(this.pageData, this.list);
-    this.genListGroup($parent);
-  }
-  PageObj.prototype.updateList=function(){
-    this.currentList = this.createList(this.pageData, this.list);
-    this.updateListGroup();
-  }
+
   // 生成列表组
-  PageObj.prototype.genListGroup = function ($parent) {    
+  PageObj.prototype.genListGroup = function ($parent) {
     this.$listGroup = this.createListGoup(this.currentList);
     this.$listGroup.appendTo($parent);
   }
   // 更新列表组
   PageObj.prototype.updateListGroup = function () {
-    let $oldListGroup = this.$listGroup;
+    this.$oldListGroup = this.$listGroup;
     this.$listGroup = this.createListGoup(this.currentList);
-    $oldListGroup.replaceWith(this.$listGroup);
+    this.$oldListGroup.replaceWith(this.$listGroup);
   }
   // 创建分页按钮
   PageObj.prototype.genPagination = function ($parent) {
@@ -172,7 +205,6 @@
       $($pageBtns[1]).removeClass('disabled');
     }
     if (pageData.page === pageData.pageCount && pageData.oldPage !== pageData.pageCount) {
-      console.log('end');
       $($pageBtns[$pageBtns.length - 2]).addClass('disabled');
     } else if (pageData.page !== pageData.pageCount && pageData.oldPage === pageData.pageCount) {
       $($pageBtns[$pageBtns.length - 2]).removeClass('disabled');
@@ -215,21 +247,22 @@
   PageObj.prototype.pageBtnsHandle = function (page) {
     if (page === this.pageData.page) { return };
     var min = this.pageData.min;
-    this.pageData.update(page);
+    this.pageData.update(page);//更新分页数据
+    // 更新分页按钮
     if (min !== this.pageData.min) {
       this.updatePagination();
-      return;
+    }else{
+      this.updatePageBtnsClass();
     };
-    this.updatePageBtnsClass();
     // 更新列表组
     this.updateList();
   }
-  
-  PageObj.prototype.createPagination=createPagination;
-  PageObj.prototype.initFn = function ({createListGoup,genList,updateList}) {
+
+  PageObj.prototype.createPagination = createPagination;
+  PageObj.prototype.initFn = function ({ createListGoup, genList, updateList }) {
     this.createListGoup = createListGoup;
-    if (genList){this.genList=genList};
-    if(updateList){this.updateList=updateList}
+    this.genList = genList;
+    this.updateList = updateList
   }
 
   Object.defineProperties(window, {

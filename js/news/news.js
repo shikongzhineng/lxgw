@@ -7,7 +7,7 @@ $(function () {
         <div class="media">
           <div class="media-left">
             <a href="${item.link}">
-              <img class="media-object" src="${item.img}" alt="">
+              <img class="media-object" src="../../${item.img}" alt="">
             </a>
           </div>
           <div class="media-body ml-3 p-2">
@@ -48,23 +48,26 @@ $(function () {
   var container;
   var pageData;
   // 初始化 更新数据并渲染数据到相关dom元素当中
-  function main(newsList,selector) {
+  function main(newsList, selector) {
     // 查找容器，将新闻列表及分页按钮放入其中
     container = $(selector).children()[1];
-    console.log(container);
+    // console.log(container);
     // 创建分页相关数据对象
     pageData = new PageData({});
     // 生成新闻列表并挂载到dom树中
     var pageObj = new PageObj(pageData);
-    pageObj.initFn(createNewsList);
-    pageObj.genList(newsList,container.firstElementChild);
-    // 创建分页按钮并挂载到dom树中
-    if (pageData.pageCount > 1) {
-      pageObj.genPagination(container.lastElementChild);
-    }
+    pageObj.initFn({ createListGoup: createNewsList, genList, updateList });
+    (async function () {
+      await pageObj.genList(newsList);
+      pageObj.genListGroup(container.firstElementChild);
+      // 创建分页按钮并挂载到dom树中
+      if (pageData.pageCount > 1) {
+        pageObj.genPagination(container.lastElementChild);
+      }
+    })()
   }
-  Object.defineProperty(window,'newsMain',{
-    value:main
+  Object.defineProperty(window, 'newsMain', {
+    value: main
   })
 
 })
