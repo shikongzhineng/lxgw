@@ -130,20 +130,18 @@
     console.log(bool,'111111')
     this.$oldListGroup = this.$listGroup;
     console.log(this.$oldListGroup===this.$listGroup,'00000')
-    if (bool===true){
-      console.log('列表更新未完成');
-      return;
-    }
+    // if (bool===true){
+    //   console.log('列表更新未完成');
+    //   return;
+    // }
     var val = await new Promise((resolve) => {
       var t = setTimeout(() => {
         var list = createList(this.pageData, this.list);
         resolve({ list });
         clearTimeout(t);
-      },200)
+      },50)
     })
     this.currentList = val.list;
-    console.log(this.currentList[0].title);
-    console.log(this.pageData.page,'page end');
     this.updateListGroup();
   }
 })();

@@ -66,14 +66,13 @@ $(function () {
     );
     // 分页按钮
     // 创建分页相关数据对象
-    var pageData = new PageData({pageSize:3});
+    var pageData = new PageData({});
     // 生成列表并挂载到dom树中
     var pageObj = new PageObj(pageData);
     pageObj.initFn({createListGoup,genList,updateList});
     (async function(){
       await pageObj.genList(obj.list);
       pageObj.genListGroup($tabItem);
-      console.log(pageData.pageCount);
       // 创建分页按钮并挂载到dom树中
       if (pageData.pageCount > 1) {
         pageObj.genPagination($tabItem);

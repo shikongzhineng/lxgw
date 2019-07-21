@@ -647,27 +647,472 @@ $(function () {
   var open = {
     title: '开源生态',
     name: 'open',
-    list: []
+    list: [
+      {
+        title:'开发库',
+        list:[
+          {
+            title:'Nodejs JavaScript 运行环境',
+            img:'2-1Z52314402GR-lp.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'Electron',
+            img:'2-1Z52314322V50-lp.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'Snappy-java',
+            img:'2-1Z521144543214.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'protobuf',
+            img:'2-1Z521143253V6-lp.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'thrift',
+            img:'2-1Z5101P4404D.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'boost',
+            img:'1111.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'Apache kudu 软件',
+            img:'2-1Z401104003W3-lp.png',
+            link:'javascript:;'
+          },
+          {
+            title:'Kaldi',
+            img:'2-1Z40114540cC-lp.png',
+            link:'javascript:;'
+          },
+          {
+            title:'矩阵计算软件 Openblas',
+            img:'2-1Z401155S6310-lp.png',
+            link:'javascript:;'
+          },
+          {
+            title:'rapidjson',
+            img:'2-1Z401160T94A.png',
+            link:'javascript:;'
+          }
+        ]
+      },
+      {
+        title:'大数据',
+        list:[
+          {
+            title:'Hadoop',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+          {
+            title:'hive',
+            img:'2-1Z5101P114X9.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'Kafka',
+            img:'2-1Z401144524323-lp.png',
+            link:'javascript:;'
+          },
+          {
+            title:'Storm',
+            img:'2-1Z401162243102-lp.png',
+            link:'javascript:;'
+          },
+        ]
+      },
+      {
+        title:'编程环境',
+        list:[
+          {
+            title:'Eclipse集成开发环境',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+          {
+            title:'QtCreator集成开发环境',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+          {
+            title:'NetBeans 集成开发环境',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+          {
+            title:'cmake',
+            img:'2-1Z521141932T2.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'gperftools',
+            img:'2-1Z5101K20H56-lp.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'代码构建工具 bazel',
+            img:'2-1Z4011441451L-lp.jpg',
+            link:'javascript:;'
+          },
+        ]
+      }
+    ]
   }
   var publication = {
     title: '出版物',
     name: 'publication',
-    list: []
+    list: [
+      {
+        title:'cpu原理',
+        list:[
+          {
+            title:'计算机体系结构(第二版)',
+            img:'1-1Z31QT0414O-lp.png',
+            link:'javascript:;'
+          },
+          {
+            title:'计算机体系结构基础(第二版)',
+            img:'1-1Z31QHQ3237-lp.png',
+            link:'javascript:;'
+          },
+        ]
+      },
+      {
+        title:'技术丛书',
+        list:[
+          {
+            title:'龙芯应用开发标准',
+            img:'1-1Z31QU04Y29-lp.png',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯应用自主可信计算机应用',
+            img:'1-1Z31QU92U20-lp.png',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯桌面电脑使用教程',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯办公软件使用教程',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯服务器管理员教程',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯操作系统开发教程',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯内核开发教程',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯派项目开发实战',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯IP核原理与项目开发',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+        ]
+      },
+      {
+        title:'科普宣传',
+        list:[
+          {
+            title:'我的中国芯-龙芯崛起之路',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+          {
+            title:'芯想事成',
+            img:'2-1Z61014560Vb.jpeg',
+            link:'javascript:;'
+          },
+        ]
+      },
+      {
+        title:'培训讲义',
+        list:[
+          {
+            title:'2017龙芯技术培训',
+            img:'defaultpic.gif',
+            link:'javascript:;'
+          },
+        ]
+      },
+    ]
   }
   var jiaoxue = {
     title: '教学平台',
     name: 'jiaoxue',
-    list: []
+    list: [
+      {
+        title:'教学实验箱',
+        list:[
+          {
+            title: '体系结构与CPU设计教学实验系统',
+            img: '1-151103101RA62.jpg',
+            link: 'javascript:;'
+          },
+          {
+            title: '高性能-并行计算教学实验系统',
+            img: '1-151016024920415.jpg',
+            link: 'javascript:;'
+          },
+          {
+            title: '多功能操作系统教学实验箱',
+            img: '1-151103100941b7.jpg',
+            link: 'javascript:;'
+          },
+          {
+            title: '嵌入式物联网综合实验箱',
+            img: '1-15101602510U55.jpg',
+            link: 'javascript:;'
+          },
+          {
+            title: '智龙嵌入式教学实验箱ZLJX-1C01',
+            img: '258.jpg',
+            link: 'javascript:;'
+          },
+        ]
+      }
+    ]
   }
   var wangluoshebei = {
     title: '网络设备',
     name: 'wangluoshebei',
-    list: []
+    list: [
+      {
+        title:'千兆下行万兆上行交换机',
+        list:[
+          {
+            title: '博达数据S3956N',
+            img: '2-1Z61014560Vb.jpeg',
+            link: 'javascript:;'
+          },
+          {
+            title: '博达数据S3952N',
+            img: '2-1Z61014560Vb.jpeg',
+            link: 'javascript:;'
+          },
+          {
+            title: '博达数据S3952NF',
+            img: '2-1Z61014560Vb.jpeg',
+            link: 'javascript:;'
+          },
+        ]
+      },
+      {
+        title:'万兆核心交换机',
+        list:[
+          {
+            title: '迈普通信NSS6600-03',
+            img: '2-1Z61014560Vb.jpeg',
+            link: 'javascript:;'
+          },
+        ]
+      },
+      {
+        title:'数据中心接入交换机',
+        list:[
+          {
+            title: '迈普通信NSS5820-54XF',
+            img: '2-1Z61014560Vb.jpeg',
+            link: 'javascript:;'
+          },
+          {
+            title: '迈普通信NSS5920-30XF',
+            img: '2-1Z61014560Vb.jpeg',
+            link: 'javascript:;'
+          },
+          {
+            title: '迈普通信NSS4320-56TXQF',
+            img: '2-1Z61014560Vb.jpeg',
+            link: 'javascript:;'
+          },
+          {
+            title: '迈普通信交换机',
+            img: '1-151111041402D4.jpg',
+            link: 'javascript:;'
+          },
+        ]
+      },
+      {
+        title:'千兆汇聚交换机',
+        list:[
+          {
+            title: '迈普通信NSS4320-56TF',
+            img: '2-1Z61014560Vb.jpeg',
+            link: 'javascript:;'
+          },
+          {
+            title: '迈普通信NSS4320-52F',
+            img: '2-1Z61014560Vb.jpeg',
+            link: 'javascript:;'
+          },
+          {
+            title: '迈普通信NSS4320-32TF-AC',
+            img: '2-1Z61014560Vb.jpeg',
+            link: 'javascript:;'
+          },
+        ]
+      },
+      {
+        title:'千兆接入交换机',
+        list:[
+          {
+            title: '迈普通信NSS332O-53TF',
+            img: '2-1Z61014560Vb.jpeg',
+            link: 'javascript:;'
+          },
+          {
+            title: '迈普通信NSS332O-32TF-AC',
+            img: '2-1Z61014560Vb.jpeg',
+            link: 'javascript:;'
+          },
+        ]
+      },
+    ]
   }
   var bankachanpin = {
     title: '板卡产品',
     name: 'bankachanpin',
-    list: []
+    list: [
+      {
+        title:'网络、通信安全板卡',
+        list:[
+          {
+            title:'3A防火墙网络主板',
+            img:'1-151112114021D2.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'3B防火墙,通信主板',
+            img:'1-151112113344O4.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'2H网络主板',
+            img:'1-151112113952932.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'1A网络通信主板',
+            img:'1-15111104414B95.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'1B双网口板',
+            img:'1-151111043T3432.jpg',
+            link:'javascript:;'
+          },
+        ]
+      },
+      {
+        title:'工控板卡',
+        list:[
+          {
+            title:'龙芯3A3000+7A M-ATX',
+            img:'2-1Q102140955V6-lp.png',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯国产化2H mini模块',
+            img:'2-1Q10214342B09-lp.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯派千元开发板',
+            img:'2-1Q102143KX28-lp.png',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯3A3000+7A网络板',
+            img:'2-1Q102142159323-lp.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯3A3000+7A COME模块',
+            img:'2-1Q102135Z0163-lp.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯2K1000最小化工业系统方案',
+            img:'2-1Q102113A2J8-lp.png',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯2K1000 COME模块',
+            img:'2-1Q102134915649-lp.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'2HCPCI',
+            img:'2-1FP4223U61b.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'3A2000 模块',
+            img:'1-151112134H1Q8.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'3A+2H COME',
+            img:'1-151112130259539.jpg',
+            link:'javascript:;'
+          },
+        ]
+      },
+      {
+        title:'32位SOC/MCU产品',
+        list:[
+          {
+            title:'龙芯1A芯片及开发系统',
+            img:'1-15092Z33G3464.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯1B芯片及开发系统',
+            img:'1-15092Z336035L.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯1C芯片及开发系统',
+            img:'1-15092Z3343X13.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯1D芯片(超声波计量)',
+            img:'1321534114-0-lp.jpg',
+            link:'javascript:;'
+          },
+          {
+            title:'龙芯1H芯片(数模混合)',
+            img:'defaultpic.gif',
+            link:''
+          },
+        ]
+      },
+    ]
   }
   var list = [zhengji, xitong, waishe, fangan, application, open, publication, jiaoxue, wangluoshebei, bankachanpin];
 
