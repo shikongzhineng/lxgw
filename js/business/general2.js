@@ -8,52 +8,52 @@ $(function () {
         list: [
           {
             title: '同方超翔系列龙芯台式机电脑',
-            link: '/business/general2/zhengji/zhuomiandiannao/201906/786.html',
+            link: 'javascript:;',
             img: '2-1Z4261I54M29-lp.jpg'
           },
           {
             title: '同方超翔系列龙芯一体机机电脑',
-            link: '/business/general2/zhengji/zhuomiandiannao/201906/785.html',
+            link: 'javascript:;',
             img: '2-1Z4261HKH48-lp.jpg'
           },
           {
             title: '微型计算机-天钥TR1171',
-            link: '/business/general2/zhengji/zhuomiandiannao/201906/766.html',
+            link: 'javascript:;',
             img: '2-1Z416101412402-lp.png'
           },
           {
             title: '方正D300龙芯台式机',
-            link: '/business/general2/zhengji/zhuomiandiannao/201906/800.html',
+            link: 'javascript:;',
             img: '2-1Z50Q52400545-lp.jpg'
           },
           {
             title: '中科曙光L300-G25桌面终端',
-            link: '/business/general2/zhengji/zhuomiandiannao/201906/720.html',
+            link: 'javascript:;',
             img: '1-1Z319161645131-lp.png'
           },
           {
             title: '申泰DT3000-L通用台式机计算机',
-            link: '/business/general2/zhengji/zhuomiandiannao/201906/798.html',
+            link: 'javascript:;',
             img: '2-1Z524144024406.jpg'
           },
           {
             title: '百信辰龙201F-A可靠计算机',
-            link: '/business/general2/zhengji/zhuomiandiannao/201906/763.html',
+            link: 'javascript:;',
             img: '2-1Z4160Z60B55-lp.jpg'
           },
           {
             title: '龙芯开发者电脑',
-            link: '/business/general2/zhengji/zhuomiandiannao/201906/828.html',
+            link: 'javascript:;',
             img: '2-1Z522092152922-lp.jpg'
           },
           {
             title: '百信辰龙201F-A可靠计算机',
-            link: '/business/general2/zhengji/zhuomiandiannao/201906/763.html',
+            link: 'javascript:;',
             img: '2-1Z4160Z60B55-lp.jpg'
           },
           {
             title: '中科曙光L300-G25桌面终端',
-            link: '/business/general2/zhengji/zhuomiandiannao/201906/720.html',
+            link: 'javascript:;',
             img: '1-1Z319161645131-lp.png'
           },
         ]
@@ -63,17 +63,17 @@ $(function () {
         list: [
           {
             title: '便携式计算机-天钥TR4172',
-            link: '/business/general2/zhengji/bijiben/201904/769.html',
+            link: 'javascript:;',
             img: '62.jpg'
           },
           {
             title: '同方超锐系列龙芯笔记本电脑',
-            link: '/business/general2/zhengji/bijiben/201904/784.html',
+            link: 'javascript:;',
             img: '2-1Z4261G434253-lp.jpg'
           },
           {
             title: '方正N300龙芯笔记本',
-            link: '',
+            link: 'javascript:;',
             img: '2-1Z50Q52946364-lp.jpg'
           }
         ]
@@ -83,42 +83,42 @@ $(function () {
         list: [
           {
             title: '机架式服务器-天钥SR117220',
-            link: '/business/general2/zhengji/fuwuqi/201904/770.html',
+            link: 'javascript:;',
             img: '61.jpg'
           },
           {
             title: '机架式服务器-天钥SR117440',
-            link: '/business/general2/zhengji/fuwuqi/201904/767.html',
+            link: 'javascript:;',
             img: '65.jpg'
           },
           {
             title: '同方超强系列龙芯服务器',
-            link: '/business/general2/zhengji/fuwuqi/201905/787.html',
+            link: 'javascript:;',
             img: '2-1Z50612015T56-lp.jpg'
           },
           {
             title: '中科曙光L620-G25服务器',
-            link: '/business/general2/zhengji/fuwuqi/201903/721.html',
+            link: 'javascript:;',
             img: '1-1Z319160530530-lp.png'
           },
           {
             title: '申泰RM5020（龙芯）通用服务器',
-            link: '/business/general2/zhengji/fuwuqi/201905/799.html',
+            link: 'javascript:;',
             img: '2-1Z50Q51644I5-lp.jpg'
           },
           {
             title: '百信云龙301E-A安全可靠服务器',
-            link: '/business/general2/zhengji/fuwuqi/201904/764.html',
+            link: 'javascript:;',
             img: '2-1Z4160Z60B55-lp.jpg'
           },
           {
             title: '方正SR2000龙芯服务器',
-            link: '/business/general2/zhengji/fuwuqi/201905/802.html',
+            link: 'javascript:;',
             img: '2-1Z50Q5333X21-lp.jpg'
           },
           {
             title: '中科曙光4路龙芯服务器',
-            link: '/business/general2/zhengji/fuwuqi/201906/845.html',
+            link: 'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
         ]
@@ -128,12 +128,12 @@ $(function () {
         list: [
           {
             title: '滕凌科技存储',
-            link: '/business/general2/zhengji/cunchu/201906/729.html',
+            link: 'javascript:;',
             img: '2-1Z329102442616.jpg'
           },
           {
             title: '升腾C76云终端',
-            link: '/business/general2/zhengji/yunzhongduan/201903/725.html',
+            link: 'javascript:;',
             img: '2-1Z32G41JD57-lp.jpg'
           }
         ]
@@ -143,22 +143,22 @@ $(function () {
         list: [
           {
             title: '东软医疗自助一体机',
-            link: '/business/general2/zhengji/xingyeyitiji/201906/850.html',
+            link: 'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
           {
             title: 'ZDNS域名服务一体机',
-            link: '/business/general2/zhengji/xingyeyitiji/201906/851.html',
+            link: 'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
           {
             title: '银信运维一体机',
-            link: '/business/general2/zhengji/xingyeyitiji/201906/853.html',
+            link: 'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
           {
             title: '红像云滕大数据一体机',
-            link: '/business/general2/zhengji/xingyeyitiji/201906/852.html',
+            link: 'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
         ]
@@ -174,32 +174,32 @@ $(function () {
         list: [
           {
             title: '龙芯社区版操作系统',
-            link: '/business/general2/xitong/zhuomiancaozuoxitong/201906/891.html',
+            link: 'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
           {
             title: '中标麒麟桌面操作系统',
-            link: '/business/general2/xitong/zhuomiancaozuoxitong/201904/744.html',
+            link: 'javascript:;',
             img: '57.jpg'
           },
           {
             title: '深度桌面操作系统龙芯版',
-            link: '/business/general2/xitong/zhuomiancaozuoxitong/201903/719.html',
+            link: 'javascript:;',
             img: '1-1Z31Q93559602-lp.jpg'
           },
           {
             title: '麒麟操作系统（湖南麒麟）',
-            link: 'business/general2/xitong/zhuomiancaozuoxitong/201904/771.html',
+            link: 'javascript:;',
             img: '56.jpg'
           },
           {
             title: '新支点桌面操作系统龙芯版',
-            link: '/business/general2/xitong/zhuomiancaozuoxitong/201905/831.html',
+            link: 'javascript:;',
             img: '2-1Z523135G5221-lp.jpg'
           },
           {
             title: '凝思安全操作系统V6.0（桌面版）',
-            link: '/business/general2/xitong/zhuomiancaozuoxitong/201906/1103.html',
+            link: 'javascript:;',
             img: '2-1Z61409420Mc.jpg'
           },
         ]
@@ -209,22 +209,22 @@ $(function () {
         list: [
           {
             title: '中标麒麟高级服务器操作系统',
-            link: '',
+            link:'javascript:;',
             img: '57.jpg'
           },
           {
             title: '深度服务器操作系统龙芯版',
-            link: '/business/general2/xitong/fuwuqicaozuoxitong/201903/714.html',
+            link: 'javascript:;',
             img: '1-1Z31QJH0641-lp.png'
           },
           {
             title: '新支点电信级服务器操作系统龙芯版V4.0',
-            link: '/business/general2/xitong/fuwuqicaozuoxitong/201905/832.html',
+            link: 'javascript:;',
             img: '2-1Z523141P45Z-lp.jpg'
           },
           {
             title: '凝思安全操作系统V6.0（服务器版）',
-            link: '/business/general2/xitong/fuwuqicaozuoxitong/201906/1104.html',
+            link: 'javascript:;',
             img: '2-1Z61409420Mc.jpg'
           },
         ]
@@ -234,7 +234,7 @@ $(function () {
         list: [
           {
             title: '普华云操作系统',
-            link: '/business/general2/xitong/yuncaozuoxitong/201903/732.html',
+            link: 'javascript:;',
             img: '2-1Z3291624401G.png'
           }
         ]
@@ -244,12 +244,12 @@ $(function () {
         list: [
           {
             title: '新支点电信级嵌入式操作系统龙芯版',
-            link: '/business/general2/xitong/qianrushicaozuoxitong/201905/833.html',
+            link: 'javascript:;',
             img: '2-1Z523142HJ26-lp.jpg'
           },
           {
             title: 'VxWorks板级支持包软件',
-            link: '/business/general2/xitong/qianrushicaozuoxitong/201906/1113.html',
+            link: 'javascript:;',
             img: 'defaultpic.gif'
           }
         ]
@@ -265,42 +265,42 @@ $(function () {
         list: [
           {
             title: '奔图P3305DN A4黑白激光单功能打印机',
-            link: '/business/general2/waishe/dayinji/201904/743.html',
+            link: 'javascript:;',
             img: '2-1Z409151RW02-lp.png'
           },
           {
             title: '奔图P2505 A4黑白激光单功能打印机',
-            link: '/business/general2/waishe/dayinji/201904/750.html',
+            link: 'javascript:;',
             img: '2-1Z409151RW02-lp.png'
           },
           {
             title: '奔图P5000DN A4黑白激光单功能打印机',
-            link: '/business/general2/waishe/dayinji/201904/751.html',
+            link: 'javascript:;',
             img: '2-1Z409151RW02-lp.png'
           },
           {
             title: '奔图P2505DN A4红黑双色打印机',
-            link: '/business/general2/waishe/dayinji/201904/754.html',
+            link: 'javascript:;',
             img: '2-1Z409151RW02-lp.png'
           },
           {
             title: '奔图P2500DN A4彩色单功能打印机',
-            link: '/business/general2/waishe/dayinji/201904/755.html',
+            link: 'javascript:;',
             img: '2-1Z409151RW02-lp.png'
           },
           {
             title: '奔图P3255DN',
-            link: '/business/general2/waishe/dayinji/201906/892.html',
+            link: 'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
           {
             title: '奔图M6255N',
-            link: '/business/general2/waishe/dayinji/201906/893.html',
+            link: 'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
           {
             title: '奔图P3500DN',
-            link: '/business/general2/waishe/dayinji/201906/894.html',
+            link: 'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
         ]
@@ -310,47 +310,47 @@ $(function () {
         list: [
           {
             title: '奔图DS-230 ADF高速扫描仪',
-            link: '',
+            link:'javascript:;',
             img: '2-1Z409151RW02-lp.png'
           },
           {
             title: '紫光扫描仪 Uniscan F35D',
-            link: '/business/general2/waishe/saomiaoyi/201905/819.html',
+            link: 'javascript:;',
             img: '2-1Z52111064a93-lp.jpg'
           },
           {
             title: '紫光扫描仪 Uniscan Q2230',
-            link: '/business/general2/waishe/saomiaoyi/201905/818.html',
+            link: 'javascript:;',
             img: '2-1Z52111012D04-lp.jpg'
           },
           {
             title: '紫光扫描仪 Uniscan Q400',
-            link: '/business/general2/waishe/saomiaoyi/201905/817.html',
+            link: 'javascript:;',
             img: '2-1Z521104Z1415-lp.jpg'
           },
           {
             title: '影源x2210',
-            link: '',
+            link: 'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
           {
             title: '影源x2620+',
-            link: '',
+            link: 'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
           {
             title: '虹光FB2080E',
-            link: '',
+            link:'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
           {
             title: '紫光Uniscan FS6600 Plus',
-            link: '',
+            link:'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
           {
             title: '紫光Uniscan Q2240',
-            link: '',
+            link:'javascript:;',
             img: '2-1Z61014560Vb.jpeg'
           },
         ]
